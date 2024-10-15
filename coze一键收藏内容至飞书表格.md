@@ -1100,8 +1100,6 @@ async function main({ params }: Args): Promise<Output> {
 
 为了让用户更方便输入，我们给外层bot的提示词内加上这些模板代码。
 
-测试了几轮发现：
-
 ```新提示词：```
 
 ```
