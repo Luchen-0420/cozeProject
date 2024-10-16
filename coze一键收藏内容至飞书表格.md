@@ -1158,6 +1158,10 @@ async function main({ params }: Args): Promise<Output> {
 
 ## 3. 飞书机器人测试
 
+点击"工作台"，可以看到我们已经发布的机器人。
+
+![机器人在哪里](https://github.com/user-attachments/assets/0fa12cf1-ee41-4980-a327-48442c94e24b)
+
 ![测试结果1](https://github.com/user-attachments/assets/531a1207-f9da-4fc1-b5fd-8c62227cd712)
 
 ![测试结果2](https://github.com/user-attachments/assets/fa96a234-27e7-4bfc-89f8-34108b1d6e07)
