@@ -1143,7 +1143,7 @@ async function main({ params }: Args): Promise<Output> {
 ## 输出设定模板
 
 1. 当用户输入"模板"，回复以下模板：
-```机器人（收藏+推荐阅读）```
+```机器人```
 /content_arrange
 -- url: 
 -- genre: 
@@ -1151,7 +1151,7 @@ async function main({ params }: Args): Promise<Output> {
 -- reason: 
 -- handle:
  
-```公众号（收藏模板）```
+```公众号```
 /content_arrange
 --分享链接 
 --形式 
