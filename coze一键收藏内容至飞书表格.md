@@ -983,9 +983,39 @@ async function main({ params }: Args): Promise<Output> {
 
 这里选择第2种方式。
 
-新增代码节点，对输入输出进行配置，如图所示：
+新增代码节点，对输入输出进行配置（），如图所示：
 
-### 7.11 测试
+![配置图](https://github.com/user-attachments/assets/7ec7da27-311e-4182-96dd-86afb4cbc254)
+
+```代码```
+
+判断用户传入的类型是图文还是视频来选择我们最终输出的是哪个分支的数据。
+
+```
+async function main({ params }: Args): Promise<Output> {
+    let ret;
+
+    if (params.modality === "图文") {
+        ret = params.pic_json;  
+    } else if (params.modality === "视频") {
+        ret = params.video_json;  
+    } else {
+        ret = null;  
+    }
+
+    return ret;
+}
+```
+
+### 7.11 连线
+
+与添加记录节点进行连线。
+
+![连线](https://github.com/user-attachments/assets/0c295ca8-c749-4e9d-8589-aa004043d062)
+
+![连线](https://github.com/user-attachments/assets/2445f878-6fc6-415f-93d1-0af471196c56)
+
+### 7.12 测试
 
 整体图如下所示:
 
