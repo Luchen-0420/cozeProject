@@ -8,7 +8,6 @@
 2. 自定义插件调用internlm2.5-20b-0719模型
 3. 如何在bot内100%调用工作流
 4. 发布到飞书机器人+微信订阅号/公众号
-5. （选做）微信小程序调用
 
 # 二、准备工作
 
@@ -1202,18 +1201,6 @@ async function main({ params }: Args): Promise<Output> {
 ![测试结果1](https://github.com/user-attachments/assets/2b01240b-1a72-4519-b3d9-60aa94051090)
 
 ![测试结果2](https://github.com/user-attachments/assets/be9482b7-334e-47c4-a8ed-e0e3d2408d65)
-
-# 七、微信小程序调用
-
-## 1. 发布成web SDK
-
-点击发布，勾选"web SDK"
-
-![发布](https://github.com/user-attachments/assets/dce0a7e1-64a4-4394-a992-79413bb5171f)
-
-## 2. 微信小程序调用
-
-点击登录微信公众平台，先配置域名。
 
 
 
