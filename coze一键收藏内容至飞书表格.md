@@ -1218,7 +1218,8 @@ async function main({ params }: Args): Promise<Output> {
 
 ![app罗列页面](https://github.com/user-attachments/assets/69055248-2a0d-4ccc-997b-d3396b7433cb)
 
-![删除应用](https://github.com/user-attachments/assets/a6536189-47fa-4cc0-98c7-6447ca9f746a)
+![删除应用](https://github.com/user-attachments/assets/75b4906f-c55c-4ced-ba55-99ae95526c80)
+
 
 
 
