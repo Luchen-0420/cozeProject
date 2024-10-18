@@ -1202,5 +1202,24 @@ async function main({ params }: Args): Promise<Output> {
 
 ![测试结果2](https://github.com/user-attachments/assets/be9482b7-334e-47c4-a8ed-e0e3d2408d65)
 
+# 七、补充
+
+## 1. 企业账号如何删除弃用的飞书应用
+
+登录[飞书管理后台](https://feishu.cn/admin),点击"应用管理"，筛选开发者为企业内成员。可以看到我们已经创建的应用。
+
+![1729239623861](https://github.com/user-attachments/assets/088a1de8-df6a-47cb-b8c5-212f658782ef)
+
+点击"配置"，停用应用。
+
+![停用](https://github.com/user-attachments/assets/1ba3ffec-df43-4f97-83cb-8b5d190518d1)
+
+登录[飞书开发者后台](https://open.feishu.cn/app),点击进入要删除的应用，在"凭证信息"页面下拉，点击删除。
+
+![app罗列页面](https://github.com/user-attachments/assets/69055248-2a0d-4ccc-997b-d3396b7433cb)
+
+![删除应用](https://github.com/user-attachments/assets/a6536189-47fa-4cc0-98c7-6447ca9f746a)
+
+
 
 
