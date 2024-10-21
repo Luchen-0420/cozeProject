@@ -1074,13 +1074,12 @@ async function main({ params }: Args): Promise<Output> {
 
 ### 3.1 添加内容收藏工作流快捷指令
 
-### 3.1.1 添加指令
 
 ![添加](https://github.com/user-attachments/assets/766a9ef8-210d-44fb-9ef3-3022bfd73828)
 
 ![空白](https://github.com/user-attachments/assets/171c0e89-d4f4-4de8-a52d-1c07aaee16ba)
 
-### 3.1.2 指令详细设置
+### 3.2 指令详细设置
 
 我们添加工作流后，下方会提取到开始节点的输入参数，如图所示。
 
@@ -1096,7 +1095,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![指令设置](https://github.com/user-attachments/assets/d39268a1-1c49-4b5c-9fbf-83567775a851)
 
-### 3.1.3 测试
+### 3.3 测试
 
 现在可以看到输入框上方有了快捷指令，点击这个快捷指令。
 
