@@ -46,6 +46,35 @@ coze结合飞书打造个人管理系统：财务、健康、个人成长、职�
 3. 新建飞书云文档
 4. 写入飞书表格插件
 
+### 3. 创建bot并发布飞书
+
+创建1个bot并发布飞书，后台可以看到应用创建成功。
+
+![创建应用成功](https://github.com/user-attachments/assets/257e74b4-56ac-4805-8b46-cfed9079a183)
+
+### 4. 为应用开通云文档相关资源的权限
+
+新建群组
+
+![新建群组](https://github.com/user-attachments/assets/da93f9f9-afa3-43b8-9400-b8f4a26f9b14)
+
+添加群机器人
+
+![添加群机器人](https://github.com/user-attachments/assets/e183d1c9-cdf6-4cbe-93e1-11ba04c35147)
+
+![机器人添加成功](https://github.com/user-attachments/assets/e90e292c-514a-4b23-9fe6-dae936e0ed53)
+
+到目标文件夹内添加群组，点击添加协作者
+
+![添加协作者](https://github.com/user-attachments/assets/181df4f7-e7c4-4533-aec4-ce7a59f92d87)
+
+![添加群组](https://github.com/user-attachments/assets/5c96563c-ec0c-4ad3-a7a8-c63c48395877)
+
+![添加成功](https://github.com/user-attachments/assets/6aadab15-82a5-47b6-b2c4-1b1124c0876f)
+
+![设置权限](https://github.com/user-attachments/assets/8050680a-87db-4ff7-99c9-eff85b2b4ca4)
+
+
 ## 二、新建reading工作流
 
 
