@@ -75,6 +75,10 @@ coze结合飞书打造个人管理系统：财务、健康、个人成长、职�
 ![设置权限](https://github.com/user-attachments/assets/8050680a-87db-4ff7-99c9-eff85b2b4ca4)
 
 
-## 二、新建reading工作流
+### 5. 开通文件夹相关权限
+
+这一步是为了在工作流中能有所返回
+
+
 
 
