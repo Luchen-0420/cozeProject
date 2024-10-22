@@ -18,7 +18,7 @@
 
 由于后续我们需要调试bot，bot api一天限制100次，是不够用的，可以选择性开通专业版。
 
-![coze首页](https://github.com/user-attachments/assets/afc64440-1e8d-4bb7-91b9-6c02f64f3273)
+![coze首页](https://github.com/user-attachments/assets/7c818ef8-77f6-47f6-91a4-feeb12f853af)
 
 ![专业版购买入口](https://github.com/user-attachments/assets/a0d8719a-b942-4ecb-b34c-067db23557b1)
 
