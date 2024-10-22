@@ -131,6 +131,8 @@ https://youtu.be/siHNmXLZ8y4?si=2KwcS5wElJBK4Eva
 
 ## 4. 自定义InternLM插件
 
+邀请码请私聊小助手 ~
+
 ### 4.1 新建插件
 
 ![插件新建1](https://github.com/user-attachments/assets/eedfcbd5-3fc8-453c-9cf1-3c1e5e3849d2)
