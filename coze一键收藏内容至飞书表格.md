@@ -20,33 +20,33 @@
 
 ![coze首页](https://github.com/user-attachments/assets/7c818ef8-77f6-47f6-91a4-feeb12f853af)
 
-![专业版购买入口](https://github.com/user-attachments/assets/a0d8719a-b942-4ecb-b34c-067db23557b1)
+![专业版购买入口](https://github.com/user-attachments/assets/901a9aba-0ab2-4ddd-99ee-d97fac2ac6d0)
 
 **注意，超出后是自动按量计费，后付款的**
 
-![购买页面](https://github.com/user-attachments/assets/55376976-a0fe-4eb9-87a2-5fc3a898af01)
+![购买页面](https://github.com/user-attachments/assets/2e322381-a2ac-4bdd-99da-6c9f92aa366f)
 
 **如果已经在基础版做了，想再开通专业版，请看本段**
 
 再次点击"图标"将基础版的资源复制过来。
 
-![复制1](https://github.com/user-attachments/assets/bf928a62-d283-4ded-bf5e-042daf2f0b77)
+![复制1](https://github.com/user-attachments/assets/8a5b4c60-876d-45f3-bf83-42bf3b19da66)
 
-![复制2](https://github.com/user-attachments/assets/1912c1f8-31c8-466e-a87e-b82991f7890b)
+![复制2](https://github.com/user-attachments/assets/c9e4eff5-ff55-4936-9779-38b7ebf853c3)
 
 基础版用户名如下图所示：
 
-![用户名](https://github.com/user-attachments/assets/b1811167-9cb2-4882-b31f-dae5434e9ac7)
+![基础版用户名](https://github.com/user-attachments/assets/723c3e77-fac5-44de-b598-243d04a47201)
 
 复制授权链接后，先退出专业版，登录基础版后，黏贴链接进行授权。
 
-![授权1](https://github.com/user-attachments/assets/333bbdc7-5a29-4454-8790-1fb8730743d4)
+![授权1](https://github.com/user-attachments/assets/6917927d-c31b-42e3-8eb3-a7d47923f93e)
 
-![授权2](https://github.com/user-attachments/assets/699d85ed-8da0-4b14-852e-2528284ec14f)
+![授权2](https://github.com/user-attachments/assets/ae94b0c1-6812-4ed8-a0cf-5564ac420297)
 
 授权完成后，退出基础版，重新登录专业版。点开"工作空间"，可以看到基础版的资源已经在空间内了。
 
-![复制成功](https://github.com/user-attachments/assets/09ad88cf-c2e5-4ba0-976a-2741155d6069)
+![复制成功](https://github.com/user-attachments/assets/a50438ae-b057-468d-9140-e68cad2ccdcf)
 
 ## 2. 新建飞书多维表格
 
@@ -80,13 +80,13 @@
 
 表格链接在浏览器中一定**不能是wiki**，所以**个人用户**直接从"多维表格"新建。**企业用户**在云文档、多维表格新建都可以。
 
-![个人用户新建位置](https://github.com/user-attachments/assets/526eccee-180c-4694-b694-f36e7ff476d5)
+![个人用户新建位置](https://github.com/user-attachments/assets/e7f228f4-59b6-46b3-a0d4-1e18e157deb8)
 
-![base](https://github.com/user-attachments/assets/6b314a00-7cd1-43c6-8cc5-2bef3369eb65)
+![表格注意事项](https://github.com/user-attachments/assets/13ece857-0405-4351-b93b-2f6ec631bf38)
 
 新建后空表如图所示：
 
-![空表示例](https://github.com/user-attachments/assets/f92df3a9-7c25-4514-b36a-bd5793fec254)
+![空表示例](https://github.com/user-attachments/assets/82183037-9b8e-45dc-b1b6-af8397aad289)
 
 ## 3. 多平台分享链接对比
 
@@ -133,25 +133,26 @@ https://youtu.be/siHNmXLZ8y4?si=2KwcS5wElJBK4Eva
 
 ### 4.1 新建插件
 
-![新建1](https://github.com/user-attachments/assets/1bf93d10-9e8a-4fc4-adca-b50a5115c90a)
+![插件新建1](https://github.com/user-attachments/assets/eedfcbd5-3fc8-453c-9cf1-3c1e5e3849d2)
 
-![新建2](https://github.com/user-attachments/assets/24f95184-978c-4dc9-a141-6e63af572a71)
+![插件新建2](https://github.com/user-attachments/assets/33241343-2282-4962-8337-6568d2c4128a)
 
-![新建3](https://github.com/user-attachments/assets/5f30e4a1-e1f2-46e9-8b2f-a01df1a4235d)
+![插件新建3](https://github.com/user-attachments/assets/6fd0ece5-146b-4f37-a7dd-6a3f313395c3)
 
-![新建4](https://github.com/user-attachments/assets/5f5adb8d-a8c1-46b2-ae7b-48331183c7f7)
+![插件新建4](https://github.com/user-attachments/assets/52a8d245-82c3-4963-9b5d-b9da30c74452)
 
 ### 4.2 配置元数据
 
 仔细阅读[书生浦语的API文档](https://internlm.intern-ai.org.cn/api/document)。其中模型、请求地址、api_key可以设定为固定值。我们设置输入参数为prompt和user_request。输出参数为answer。
 
-![配置元数据图](https://github.com/user-attachments/assets/59541c0b-90b8-4214-8492-71d30997d267)
+![配置元数据图](https://github.com/user-attachments/assets/d1213ed9-7839-4733-bf8d-361f5759089b)
 
 ### 4.3 获取API_KEY
 
 点击[书生·浦语API TOKENS](https://internlm.intern-ai.org.cn/api/tokens)，新建api_token。
 
-![新建token](https://github.com/user-attachments/assets/e24e7890-4980-4a96-bdbe-ef550f595cc0)
+![新建token](https://github.com/user-attachments/assets/2060ac1c-9029-4917-b371-2b7d421788fa)
+
 
 ### 4.4 代码请求
 
@@ -230,45 +231,47 @@ def ask_question(question: str) -> Optional[str]:
 
 测试之前先在左下侧安装requests的包。
 
-![安装依赖包](https://github.com/user-attachments/assets/f5f5aeac-ec39-4d58-91f2-2a43f4b40d5d)
+![安装依赖包](https://github.com/user-attachments/assets/4ef0ba1e-df4e-4148-b574-00e442dc62fd)
 
-![测试结果](https://github.com/user-attachments/assets/42cd86b5-f77d-4505-9257-a6ce439b231e)
+![自定义插件测试结果](https://github.com/user-attachments/assets/8b0465a7-5f97-4ee1-a139-2fafeddf8412)
 
 ### 4.5 发布
 
 无论是工作流还是插件，想在其他地方调用都需要先发布才行。
 
-![发布](https://github.com/user-attachments/assets/5837d7ef-b7ae-40a1-aba7-cdb933f6f7bb)
+![发布插件](https://github.com/user-attachments/assets/5509e184-6e47-4e33-9c50-247bcf788602)
 
 看到有个绿色的勾，就代表发布成功了。
 
-![发布成功](https://github.com/user-attachments/assets/c658d88a-0424-43c5-a4a9-693a68d1eb40)
+![发布成功](https://github.com/user-attachments/assets/bb0d5172-5332-43f4-a158-84dbc3705d0b)
 
 # 三、收藏至飞书表格工作流搭建
 
 ## 1. 工作流整体流程图
 
-**注意：多分支相同处理时，节点命名要区别好，这样在合并分支的时候选择参数更直观一点。**
+**注意：多分支相同功能处理时，节点命名要区别好，这样在合并分支的时候选择参数更直观一点。比如图文类和视频类都需要进行序列化处理，节点名称命名时可以采用 v_xx p_xx 等等**
 
-![整体图](https://github.com/user-attachments/assets/67a0f5f6-e5d4-4fd8-9acf-0b8b2390e8f9)
+![整体图](https://github.com/user-attachments/assets/3a333993-c9d2-442f-acdf-858c00fc4ff8)
 
 ## 2. 新建content_arrange工作流
 
-![新建页面](https://github.com/user-attachments/assets/0ebc4e38-ef76-4a07-a785-e3d2a0e655cf)
+![新建工作流](https://github.com/user-attachments/assets/bc965df6-3f21-4aea-a124-3522a449ee7f)
 
-根据弹窗，一步步填写完成后就能看到图下页面。
+根据弹窗，一步步填写完成后就能看到图下页面。这里分几个功能区域。
 
 ![新建成功](https://github.com/user-attachments/assets/1e83d89d-8f99-40a9-9271-c9e8073f437e)
+
+**注意：教程编写的时候coze工作流页面未改版，以下截图与最新有细微差别，不过影响不大，最新版的将会通过视频教程来演示和降解**
 
 ## 3. 定义输入变量
 
 我们先来看表格，对字段做一些归类，其中链接、形式、tag和收藏原因是需要我们自己手动填写的。
 
-![表格元素](https://github.com/user-attachments/assets/60c40fad-3129-4aa7-81ca-61fc24f0642d)
+![表格元素](https://github.com/user-attachments/assets/758c496b-8c15-4187-ba8a-79d74553fb9a)
 
 在开始节点新增上述4个变量，除此之外，我们还需要一个标识，来判断是否要对分享链接进行处理。这里我们设置它的名称为handle，类型为boolean。
 
-![输入变量](https://github.com/user-attachments/assets/6d3ebce1-69f6-4b40-bfad-8cfae29fe880)
+![新增变量](https://github.com/user-attachments/assets/9d77f4c2-0a97-478e-a422-0312f2b6c935)
 
 ## 4. 添加日期插件
 
@@ -276,11 +279,11 @@ def ask_question(question: str) -> Optional[str]:
 
 点击左侧```插件```节点，在插件市场搜索"时间"，点击添加。
 
-![添加日期插件](https://github.com/user-attachments/assets/3c406059-cf70-4603-9e47-d8150d75efe9)
+![添加日期插件](https://github.com/user-attachments/assets/07d29f4b-47c9-4f4d-8ab4-d5c597c5b799)
 
 将它与开始节点连线。
 
-![连线](https://github.com/user-attachments/assets/6f36e9bf-48be-4f6c-a3ef-e81422df4f88)
+![连线](https://github.com/user-attachments/assets/456fcd81-a4ad-41ce-9aee-2cbe2b3244e9)
 
 ## 5. if选择器判断内容形式
 
@@ -288,13 +291,13 @@ def ask_question(question: str) -> Optional[str]:
 
 点击左侧“if选择器”，添加，并于日期插件连线。
 
-![添加if选择器](https://github.com/user-attachments/assets/7aafa4d1-9f76-41e5-bbd4-d8f626a8c097)
+![添加If选择器](https://github.com/user-attachments/assets/f3d30839-26cc-4e4a-a355-c6d4548ed144)
 
 我们先做图文类处理。如果modality等于图文，走第一个分支处理，否则（modality等于视频）走剩下的分支处理。
 
-这里其实不太严谨的，这里偷个懒，我们自己输入的时候严格一点，只输入：图文 or 视频。严谨点应该是if modality == "图文" ... , else if modality == "视频" ... ,else ....
+这里其实不太严谨的，主要是偷个懒，我们自己输入的时候严格一点，只输入：图文 or 视频。严谨点应该是if modality == "图文" ... , else if modality == "视频" ... ,else ....
 
-![if选择器](https://github.com/user-attachments/assets/9a8c44b3-ab70-4147-884b-ad1ec1e10004)
+![if选择器配置](https://github.com/user-attachments/assets/69989ab0-dfea-4e7e-bdc1-5d4ee77a7f70)
 
 ## 6. 图文类
 
@@ -304,11 +307,11 @@ def ask_question(question: str) -> Optional[str]:
 
 添加代码节点，并与if选择器第一个分支进行连线。
 
-![连线](https://github.com/user-attachments/assets/dd37fe62-56e3-499f-baf8-e2425eb579ff)
+![连线](https://github.com/user-attachments/assets/8e6e0a6e-7673-48c1-9c76-9e0897779860)
 
 #### 6.1.1 对输入输出进行设置
 
-![输入输出设置](https://github.com/user-attachments/assets/7fcca214-4033-4fef-94e2-4b13b8f03946)
+![输入输出设置](https://github.com/user-attachments/assets/ba6ed391-9839-47e6-8469-e7ab662ed8f4)
 
 #### 6.1.2 python代码对链接进行处理
 
@@ -344,7 +347,7 @@ async def main(args):
 
 测试代码节点有2种方式，一种是代码编辑器测试，一种是单个节点测试。
 
-![节点测试方法](https://github.com/user-attachments/assets/233dcf3d-9e8c-4bac-b474-54f587f2127e)
+![节点测试方式](https://github.com/user-attachments/assets/fd6e4622-f314-45a2-a7e1-fa187eb8141f)
 
 这里我们用一个小红书图文链接进行测试。**注意，同一链接请求次数多了、频繁了，在插件爬取时会返回滑块验证，所以大家自己准备一个测试链接**
 
@@ -352,7 +355,7 @@ async def main(args):
 46 【大连｜4天21顿❣️人少嘎嘎好吃，本地人推荐‼️ - 马溜达 | 小红书 - 你的生活指南】 😆 S0TF6EsOSlaAJh4 😆 https://www.xiaohongshu.com/discovery/item/667aacb8000000001e010eb2?source=webshare&xhsshare=pc_web&xsec_token=AB1e31D0BGnaywnmwX7C37dGKIbrOsxGltreE-BRB1aeE=&xsec_source=pc_share
 ```
 
-![提取url](https://github.com/user-attachments/assets/910ebc34-9a77-42c6-9673-8b88d008d6d2)
+![提取代码测试结果](https://github.com/user-attachments/assets/5825ccc2-4189-48b0-bbcf-56eed0cf11e9)
 
 ### 6.2 图文类-插件市场jina-reader插件-爬取图文内容
 
@@ -360,9 +363,9 @@ async def main(args):
 
 插件市场搜索"jina-reader"插件，添加并使用。
 
-![添加插件](https://github.com/user-attachments/assets/ab9ca722-5c10-4385-87da-dae16bf15b49)
+![添加jinareader插件](https://github.com/user-attachments/assets/455c4530-a128-4a0f-9cfa-636d0cdd590e)
 
-![连线](https://github.com/user-attachments/assets/fc36513c-e419-4315-b946-56bcda0d801a)
+![连线](https://github.com/user-attachments/assets/dd8dac6c-8008-4142-8120-a02df2d1edc9)
 
 #### 6.2.2 测试节点
 
@@ -374,9 +377,9 @@ https://www.xiaohongshu.com/discovery/item/667aacb8000000001e010eb2?source=websh
 
 测试结果如下：
 
-![测试结果1](https://github.com/user-attachments/assets/3c02c206-d89d-4919-9371-afa8c80d4f1e)
+![测试结果1](https://github.com/user-attachments/assets/0a5afd3a-24b2-47f9-8d28-18110a1f600e)
 
-![测试结果2](https://github.com/user-attachments/assets/3e73c3ba-d497-4929-abfa-36cf120c5c68)
+![测试结果2](https://github.com/user-attachments/assets/e24c1106-42be-46ad-b169-3d613c80cdc6)
 
 ### 6.3 图文类-代码节点-处理爬取内容
 
@@ -399,7 +402,7 @@ https://www.xiaohongshu.com/discovery/item/667aacb8000000001e010eb2?source=websh
 
 我们输入的是上个节点返回的data，输出变量名output，因为要拿这个output值传递给自定义的模型插件，所以这里设置string类型，到时候包裹的参数做json处理输出。如下图所示：
 
-![配置输入输出](https://github.com/user-attachments/assets/fdca405e-354f-465a-8b75-5beeca46c5bc)
+![配置输入输出](https://github.com/user-attachments/assets/a61e8d99-f552-41ee-8c31-a6dafdc3e333)
 
 #### 6.3.2 代码及测试
 
@@ -466,7 +469,7 @@ async def main(args: Any) -> str:
 
 测试数据，你可以整个工作流开始到结束全部连线测试，也可以单个节点点击自动生成数据来测试或者测试上个节点，复制备份出输出用来下个节点测试。
 
-![自动生成](https://github.com/user-attachments/assets/cd553e29-8adf-466a-9182-c6bf3b352717)
+![自动生成测试数据](https://github.com/user-attachments/assets/9c01f211-21ee-47d7-9775-97cb633618d7)
 
 测试结果如下，可以看出减少了500多字符。
 
@@ -478,11 +481,11 @@ async def main(args: Any) -> str:
 
 添加我们发布的internlm_api的插件。团队空间就是团队工具，个人空间就是个人工具。
 
-![添加自定义插件](https://github.com/user-attachments/assets/6d548626-623e-486c-bc4d-d8a7ca7ea938)
+![添加自定义插件](https://github.com/user-attachments/assets/30acac2a-caa5-4af8-8d33-032ea3994984)
 
 选择"输入"prompt，如图所示：
 
-![设置图](https://github.com/user-attachments/assets/2f2189e1-2ba9-4952-8335-f4b6950a9140)
+![设置图](https://github.com/user-attachments/assets/976da6c1-8df5-4d66-971c-507ffb472792)
 
 ```
 # 任务\n
@@ -511,13 +514,13 @@ siteName：仅回答URL归属的平台名称，不需要额外解释。使用最
 
 测试结果里我们想要的summary和sitename都被包裹在一起，接下来我们要新增一个代码节点把它们提取出来。
 
-![测试结果](https://github.com/user-attachments/assets/223efb4f-791f-4a81-bbc3-719d21abcc2a)
+![测试结果](https://github.com/user-attachments/assets/697a9d87-403f-4cbd-b81e-5cdef08b2c07)
 
 ### 6.5 图文类-代码节点-对模型返回结果提取参数
 
 #### 6.5.1 添加代码节点并配置
 
-![配置图](https://github.com/user-attachments/assets/c1ba0545-7b8c-42ae-9710-10df1eacf038)
+![代码节点配置图](https://github.com/user-attachments/assets/3f95859c-f0e8-4354-a2d1-41466cbb7a22)
 
 #### 6.5.2 代码
 
@@ -557,7 +560,7 @@ async def main(args: Args) -> Output:
 
 #### 6.5.3 测试
 
-![测试结果](https://github.com/user-attachments/assets/6f37ffa8-2d08-428f-8b30-5c2ca3ad0b41)
+![代码节点测试结果](https://github.com/user-attachments/assets/7eb994d1-a464-4df1-b166-167a8ef2d8f3)
 
 ### 6.6 飞书多维表格add_record插件-信息写入飞书
 
@@ -565,7 +568,7 @@ async def main(args: Args) -> Output:
 
 还是先来看我们的表格元素分类图。
 
-![表格元素](https://github.com/user-attachments/assets/60c40fad-3129-4aa7-81ca-61fc24f0642d)
+![表格元素分类图](https://github.com/user-attachments/assets/ccd05afa-4ffc-47c3-af65-c9dd96780bcf)
 
 所有需要的参数都已经准备好了，下面准备写入飞书表格。
 
@@ -583,7 +586,7 @@ async def main(args: Args) -> Output:
 
 从插件市场添加写入插件
 
-![添加插件](https://github.com/user-attachments/assets/6b86c4d4-140f-4f94-81cb-d94b2ea6914b)
+![添加插件](https://github.com/user-attachments/assets/8147deae-b668-4cd7-aaec-e7c3a0a1aa1c)
 
 它有2个必填参数：app_token和records。
 
@@ -599,7 +602,7 @@ async def main(args: Args) -> Output:
 ]
 ```
 
-![插件图](https://github.com/user-attachments/assets/b163d138-374f-4ffc-b086-8b3a713e3ba7)
+![插件图](https://github.com/user-attachments/assets/61793485-bc8c-450d-8a4a-94f86d84c6bf)
 
 #### 6.6.3 代码节点-json序列化处理输入
 
@@ -607,7 +610,7 @@ async def main(args: Args) -> Output:
 
 新建代码节点，与上个节点连线，配置输入输出参数，如图所示：
 
-![配置输入输出](https://github.com/user-attachments/assets/99ae8870-2890-4d4f-b501-954967c4610f)
+![配置输入输出](https://github.com/user-attachments/assets/12ba6f00-1b62-4f71-946e-6ecfb27bf007)
 
 ```JavaScript代码```
 
@@ -642,54 +645,53 @@ async function main({ params }: Args): Promise<Output> {
 
 测试结果如下：
 
-![测试结果](https://github.com/user-attachments/assets/ad3d5f7e-17ad-4a6e-88f5-1bc663427f62)
+![测试结果图](https://github.com/user-attachments/assets/0d2a545e-12ff-4130-bb94-0492febab552)
 
 #### 6.6.4 连接飞书新增记录节点
 
 复制链接到浏览器打开。
 
-![复制链接](https://github.com/user-attachments/assets/4ee971a3-90e1-4632-937c-1bfe23568cc9)
+![复制链接](https://github.com/user-attachments/assets/d15fd91b-a501-44ad-b236-26306e0e14fb)
 
 参数如图所示。
 
-![参数图](https://github.com/user-attachments/assets/9f5fb05f-32d7-41cc-a854-c3de8977fd80)
+![表格链接参数](https://github.com/user-attachments/assets/13ff9c63-c1c8-4156-93ac-dbe835df4d14)
 
 配置add_records节点，并连接结束节点，选择add_records节点返回msg作为输出。
 
-![add_record节点](https://github.com/user-attachments/assets/0a1c1f34-9ac1-40ca-a648-18a0373e6dac)
+![连线](https://github.com/user-attachments/assets/0661ead5-ce4f-4c67-8632-cba681294205)
 
-![image](https://github.com/user-attachments/assets/0af9d689-2fe7-42c2-a1b0-dfbceff4b23c)
+![结束节点设置](https://github.com/user-attachments/assets/59e729c4-ae9e-45f2-b3a3-fb7a201749a7)
 
 ### 6.7 图文类-整体测试
 
 经过前面的搭建，我们对图文类的处理基本完成。整体图如图所示：
 
-![整体图](https://github.com/user-attachments/assets/c592c63c-d28a-43bf-9d57-fa8dbf4e2e67)
+![图文类整体图](https://github.com/user-attachments/assets/7e6018e1-618e-4e34-aed0-ac4f77423c85)
 
 准备一个链接，点击右上角的试运行来测试下！！！
 
-![开始节点输入](https://github.com/user-attachments/assets/2a25bc97-769f-4d1a-bba8-c23e3389d8b9)
+![开始节点输入](https://github.com/user-attachments/assets/af71abe8-71a2-4a34-a70b-0367fbc0744c)
 
-第一次的时候会要求飞书对coze授权，复制信息到浏览器进行授权。
+第一次的时候会要求飞书对coze授权，复制信息到浏览器进行授权或者点击授权按钮。
 
-![授权报错](https://github.com/user-attachments/assets/91db0967-dfa9-444f-9d43-8b31a7f67b59)
+![第一次运行授权问题](https://github.com/user-attachments/assets/da9291af-b6a0-4a6a-9c27-720416504d24)
 
-![授权](https://github.com/user-attachments/assets/2b31330b-eb95-488d-a8ef-5972bb9c6e94)
+![授权](https://github.com/user-attachments/assets/ac2e7879-59a0-44c4-aee8-58c0809c5fc1)
 
 重新试运行一次。
 
-![入库成功](https://github.com/user-attachments/assets/b14b98cd-a32c-42bd-a793-b3f7f2cc7986)
+![工作流运行结果](https://github.com/user-attachments/assets/b992db0e-2fa1-4e23-ba5b-e2a7d0500ba0)
 
 打开飞书表格，可以看到记录已经进来了。
 
-![飞书表格](https://github.com/user-attachments/assets/590bd3e4-e5e4-4c4c-bda8-df9ffe602403)
+![飞书表格记录](https://github.com/user-attachments/assets/611e095f-eeae-42e4-b311-eda7c463b5fd)
 
 为了更直观查看，我们可以添加画册视图。
 
-![添加画册视图](https://github.com/user-attachments/assets/c3740f97-ac5b-448b-af0a-0b9282abb14f)
+![添加画册视图](https://github.com/user-attachments/assets/cbf051a9-ee7b-45d6-906a-8ef7860376ec)
 
-![画册视图](https://github.com/user-attachments/assets/6ecb756e-11ea-488b-b076-fc6157ac298a)
-
+![画册视图](https://github.com/user-attachments/assets/7c3addd9-906b-442f-b49d-c1436a4a12c4)
 
 图文类完成后，我们要对if选择器分支的else（即对视频类进行处理）
 
@@ -705,8 +707,7 @@ async function main({ params }: Args): Promise<Output> {
 
 添加if选择器，并连线上一个if选择器的否则分支。
 
-![if选择器](https://github.com/user-attachments/assets/58a60498-7c79-4174-a830-5f5f15bca226)
-
+![添加if选择器](https://github.com/user-attachments/assets/cbc59f7d-f476-4f49-a6d3-e1eff42e7203)
 
 ### 7.2 需要链接处理分支（handle为true）-代码节点-提取url
 
@@ -714,7 +715,7 @@ async function main({ params }: Args): Promise<Output> {
 
 新增代码节点，进行提取。
 
-![配置图](https://github.com/user-attachments/assets/cade8ed0-fc8a-4a16-9e02-380413a8fbe2)
+![配置图](https://github.com/user-attachments/assets/bc50c918-1639-4444-a7e1-2cee09cdb3af)
 
 #### 7.2.2 代码
 
@@ -751,15 +752,15 @@ async def main(args):
 
 #### 7.2.3 测试
 
-![b站](https://github.com/user-attachments/assets/cbaa406d-c667-49c4-94a2-5b7b823e8a07)
+![b站链接测试](https://github.com/user-attachments/assets/7c6a0a6f-2c47-4f04-86d6-9eca5ec92aaa)
 
-![抖音](https://github.com/user-attachments/assets/af3d7105-baae-4fa1-bba3-b440cac83244)
+![抖音链接测试](https://github.com/user-attachments/assets/a6d1c602-fdbd-4164-957c-281b72b06a73)
 
 ### 7.3 需要链接处理分支（handle为true）-自定义插件-对标题、平台做提炼
 
 #### 7.3.1 插件设置
 
-![设置](https://github.com/user-attachments/assets/07df019a-bc77-4ed7-a5e0-14953495f675)
+![插件设置](https://github.com/user-attachments/assets/1f700a67-eafa-4cdb-bd5a-48f49b000ca8)
 
 #### 7.3.2 prompt
 
@@ -784,13 +785,13 @@ siteName：仅回答URL归属的平台名称，不需要额外解释,不要使�
 
 #### 7.3.3 测试
 
-![测试结果](https://github.com/user-attachments/assets/c8101a8f-b627-4a4e-be67-0be513524b1f)
+![测试结果](https://github.com/user-attachments/assets/bedc206e-a328-4060-9618-ec748a578486)
 
 ### 7.4 需要链接处理分支（handle为true）-代码节点-对大模型返回结果做参数提取
 
 #### 7.4.1 节点设置
 
-![节点设置](https://github.com/user-attachments/assets/36317b2f-b87b-45e1-af5b-c32ed0be1fef)
+![节点设置](https://github.com/user-attachments/assets/701fa4fc-814e-4d68-8991-667bec0d9709)
 
 #### 7.4.2 代码
 
@@ -824,10 +825,9 @@ async def main(args: Args) -> Output:
 
 #### 7.4.3 测试
 
-![测试结果](https://github.com/user-attachments/assets/41e392b1-d272-4208-828f-d10eec91cdb7)
+![测试结果](https://github.com/user-attachments/assets/33e27e2c-8fbc-46ae-9562-81e38dbf0365)
 
 截止这一步，我们对**需要链接处理分支（handle为true）** 的处理已经完成，下面对handle为false的情况来处理。
-
 
 ### 7.5 不需要链接处理分支（handle为false）-文本处理节点-参数拼接
 
@@ -835,17 +835,17 @@ async def main(args: Args) -> Output:
 
 添加文本处理节点，并配置，如图所示：
 
-![配置](https://github.com/user-attachments/assets/08b161e2-aa6e-465f-9a5a-3e7e88acda5f)
+![配置](https://github.com/user-attachments/assets/19613dc1-fa77-4812-993a-2a402c5eccef)
 
 测试结果：
 
-![测试结果](https://github.com/user-attachments/assets/aba087d8-72e8-4726-955d-c78123368409)
+![测试结果](https://github.com/user-attachments/assets/6fc0f80c-7def-46c5-89f5-dd3fd6a40e50)
 
 ### 7.6 不需要链接处理分支（handle为false）-自定义插件-对标题、平台做提炼
 
 #### 7.6.1 插件设置
 
-![配置图](https://github.com/user-attachments/assets/a1ed441f-9810-4276-830f-e80e5de314f3)
+![配置图](https://github.com/user-attachments/assets/408637a4-2ae4-4f9f-abe8-5a7df18f7a04)
 
 #### 7.6.2 prompt
 
@@ -870,7 +870,7 @@ siteName：仅回答用户输入的url归属的平台名称，不需要额外解
 
 #### 7.6.3 测试
 
-![测试结果](https://github.com/user-attachments/assets/5a353a13-05d5-469c-968d-d3b1818679aa)
+![测试结果](https://github.com/user-attachments/assets/4a98c668-4acd-4c86-b2e8-0d505d4c0492)
 
 ### 7.7 需要链接处理分支（handle为false）-代码节点-对大模型返回结果做参数提取
 
@@ -878,7 +878,7 @@ siteName：仅回答用户输入的url归属的平台名称，不需要额外解
 
 测试结果如下:
 
-![测试结果](https://github.com/user-attachments/assets/2c6a4c7c-ea10-462b-86ec-c96d768572c2)
+![测试结果](https://github.com/user-attachments/assets/095550fe-4d2e-4a30-937d-b7cf765dee70)
 
 ### 7.8 视频类-两个分支合并处理
 
@@ -900,11 +900,11 @@ siteName：仅回答用户输入的url归属的平台名称，不需要额外解
 
 由于我们是2个分支合并判断做一个输出，看下图分支处理上，涉及到的参数有：url、title、sitename。所以我们要对它们3个进行判断并输出。
 
-![分支图](https://github.com/user-attachments/assets/a511048a-a69d-4176-9adb-8d877b55afba)
+![分支图](https://github.com/user-attachments/assets/4037fcea-f2ed-4e94-af0d-e136dcbab3e4)
 
 添加代码节点，并配置，如图所示：
 
-![配置图](https://github.com/user-attachments/assets/f3058bb5-ed1b-41f9-bfd0-283189702afe)
+![配置图](https://github.com/user-attachments/assets/0a402ccc-ace5-4d3e-b712-c2698641cad5)
 
 代码：
 
@@ -932,7 +932,7 @@ async function main({ params }: Args): Promise<Output> {
 
 #### 7.8.3 测试结果
 
-![测试结果](https://github.com/user-attachments/assets/0c37c7ed-b962-40a8-bb31-3ba9f61b6670)
+![测试结果](https://github.com/user-attachments/assets/4608a1cc-7622-4231-88af-98123b11bb3a)
 
 ### 7.9 视频类-代码节点-json序列化处理输入
 
@@ -940,7 +940,7 @@ async function main({ params }: Args): Promise<Output> {
 
 复制图文类的json处理节点，与上个节点连线，配置输入输出参数，这里注意的是，要删除summary入参，如图所示：
 
-![配置](https://github.com/user-attachments/assets/0c72c2c1-54b0-4a59-82f8-783035aca969)
+![配置](https://github.com/user-attachments/assets/c58186ee-9eab-4a7e-9d55-bcefd7c7bcbb)
 
 ```JavaScript代码```
 
@@ -986,7 +986,7 @@ async function main({ params }: Args): Promise<Output> {
 
 新增代码节点，对输入输出进行配置（），如图所示：
 
-![配置图](https://github.com/user-attachments/assets/7ec7da27-311e-4182-96dd-86afb4cbc254)
+![配置图](https://github.com/user-attachments/assets/0957125f-2ca2-4a23-940a-4eae60ec6ee3)
 
 ```代码```
 
@@ -1012,9 +1012,9 @@ async function main({ params }: Args): Promise<Output> {
 
 与添加记录节点进行连线。
 
-![连线](https://github.com/user-attachments/assets/0c295ca8-c749-4e9d-8589-aa004043d062)
+![代码节点与添加记录连线](https://github.com/user-attachments/assets/bc5c65a8-2799-442e-8d94-507b7c102337)
 
-![连线](https://github.com/user-attachments/assets/2445f878-6fc6-415f-93d1-0af471196c56)
+![添加记录与结束节点连线](https://github.com/user-attachments/assets/ec292362-4138-4e93-a6a7-26d0455ea765)
 
 ### 7.12 测试
 
@@ -1024,13 +1024,13 @@ async function main({ params }: Args): Promise<Output> {
 
 整个流程很快，大概3-10s
 
-![运行完成图](https://github.com/user-attachments/assets/a7b69db0-7f81-45f2-a1ec-5d3d0b34df1a)
+![工作流运行完成](https://github.com/user-attachments/assets/a09ff4fb-8bcc-4878-a008-1fda0b7e6a8a)
 
 看下飞书表格。
 
-![表格视图](https://github.com/user-attachments/assets/ac9a6165-b40c-4046-b4aa-75bd83ccf5a1)
+![表格视图](https://github.com/user-attachments/assets/d8e114c3-3228-4b76-b88f-40c47d48c40b)
 
-![插件视图](https://github.com/user-attachments/assets/2a033a8d-0777-4b83-b25c-9467ac5c93d6)
+![画册视图](https://github.com/user-attachments/assets/4b913631-3577-44a2-9352-cd0c11a19841)
 
 **一定要记得发布节点**
 
@@ -1040,33 +1040,31 @@ async function main({ params }: Args): Promise<Output> {
 
 点击“在线推理”，点击“创建推理接入点”，这里我新增了一个doubao-128k的模型。
 
-![在线推理](https://github.com/user-attachments/assets/841ab54b-6a41-4bb1-b6b1-2339eb621a05)
+![在线推理](https://github.com/user-attachments/assets/27f56ee9-34ef-4aef-8d88-558b7347e27e)
 
-![添加处](https://github.com/user-attachments/assets/1a1e27d7-7959-4746-875d-bed64a9de0bf)
+![添加处](https://github.com/user-attachments/assets/0dda43f5-6e56-4878-87fd-4d9eabc71fc6)
 
-![添加模型](https://github.com/user-attachments/assets/e047675d-e03d-4ab3-bddd-fa7b47ddd9b9)
-
+![添加模型](https://github.com/user-attachments/assets/69f7a80d-ddf1-443d-9936-579da25345d9)
 
 # 五、使用bot进行内容收藏
 
 ## 1. 新增bot
 
-点击"项目开发"，新增一个Bot
+点击"项目开发"，新增一个智能体
 
-![新增bot](https://github.com/user-attachments/assets/c147671c-f82a-412f-9f41-303de9971665)
+![新增智能体](https://github.com/user-attachments/assets/b55eaf95-f81b-4a92-b19b-d3fb7f4c44f6)
 
-## 2. bot内添加已发布的工作流
+## 2. 智能体内添加已发布的工作流
 
-![添加工作流1](https://github.com/user-attachments/assets/0096e61a-3377-4250-898e-ce4aa9f16db0)
-
+![添加工作流](https://github.com/user-attachments/assets/c6945d52-5540-4e89-9886-66cfd3115b4a)
 
 ## 3. 设置快捷指令(100%调用工作流）
 
 原先我给定的提示词如图所示，即便对Bot的人设与回复逻辑做了层层限制，它还是不会100%按照设定和限制来调用工作流。
 
-![提示词](https://github.com/user-attachments/assets/f2ff682d-8562-4233-9f19-3c638bfd454d)
+![原先人设](https://github.com/user-attachments/assets/b6ae0b21-81b7-4e73-93d5-b27c14250680)
 
-想做到100%调用工作流。这里我们就要用到快捷指令功能。官方描述是
+想做到100%调用工作流。这里我们就要用到**快捷指令功能**。官方描述是
 
 ```
 快捷指令是对话输入框上方的按钮，配置完成后，用户可以快速发起预设对话
@@ -1074,61 +1072,57 @@ async function main({ params }: Args): Promise<Output> {
 
 ### 3.1 添加内容收藏工作流快捷指令
 
+![添加快捷指令位置](https://github.com/user-attachments/assets/9c38f5c0-a2cf-4300-bcbe-11d75bbb3b70)
 
-![添加](https://github.com/user-attachments/assets/766a9ef8-210d-44fb-9ef3-3022bfd73828)
-
-![空白](https://github.com/user-attachments/assets/171c0e89-d4f4-4de8-a52d-1c07aaee16ba)
+![空白快捷指令](https://github.com/user-attachments/assets/047563e1-1e81-4627-82cc-eb8fc84c60bd)
 
 ### 3.2 指令详细设置
 
 我们添加工作流后，下方会提取到开始节点的输入参数，如图所示。
 
-![设置1](https://github.com/user-attachments/assets/eb132326-9e2c-4a51-8cf1-29634960b719)
+![快捷指令设置1](https://github.com/user-attachments/assets/8876a5d3-1ff8-4d21-ba6d-24da62e594eb)
 
-![设置2](https://github.com/user-attachments/assets/0e8f9021-2cd0-4e50-8859-4be2a00638b4)
+![快捷指令设置2](https://github.com/user-attachments/assets/6aa01f64-e0ea-430f-95c0-0b7c0a4b56ad)
 
 右侧是展现给用户的输入框，英文描述有时候没有中文来得直观，我们可以修改左侧的组件设置。如图所示：
 
-![中文设置](https://github.com/user-attachments/assets/d1384a06-2241-4ac5-ac39-9de0cee32a39)
+![中文设置](https://github.com/user-attachments/assets/d5d1a7d9-e63a-4590-a4e9-d4ddef2e710d)
 
 **指令内容**就是我们要发送给工作流的内容。可以点击右上角的按钮插入变量，也可以直接输入`{`快速选择。设置完成后点击确认。
 
-![指令设置](https://github.com/user-attachments/assets/d39268a1-1c49-4b5c-9fbf-83567775a851)
+![指令设置](https://github.com/user-attachments/assets/1474deb9-de08-46cd-bb73-f6ebdd0d5127)
 
 ### 3.3 测试
 
 现在可以看到输入框上方有了快捷指令，点击这个快捷指令。
 
-![快捷指令1](https://github.com/user-attachments/assets/0d4c661f-250b-4ded-8a1f-3026c0db489a)
+![快捷指令位置](https://github.com/user-attachments/assets/7ee95295-60fd-4679-9298-d701dc92a7d6)
 
-![快捷指令2](https://github.com/user-attachments/assets/1270c4d6-1366-44b1-9fa4-8c4cb1d7ae32)
+![快捷指令展开](https://github.com/user-attachments/assets/16a69730-188a-43d6-94e9-a00125b525db)
 
 输入参数并发送，第一次会出现要授权飞书表格的提示，授权后重新运行一边就可以了。这里我做了一个关于图文一个关于视频的测试，可以看到已经添加进飞书表格了。
 
-![授权](https://github.com/user-attachments/assets/7be2b6eb-a3e1-4ecb-837d-586d52792e87)
+![授权](https://github.com/user-attachments/assets/44ab9112-6d4e-491b-9ac2-93b7bec5aab3)
 
-![测试1](https://github.com/user-attachments/assets/06af87fb-9f45-4be0-bf22-92185e32fa0d)
+![测试结果](https://github.com/user-attachments/assets/eef70255-bddc-48be-8896-a70ba7f86a38)
 
-![测试2](https://github.com/user-attachments/assets/365471ae-cecc-417a-8926-2c52a515ffff)
-
-**更改后一定要发布！！！**
+![测试结果画册视图](https://github.com/user-attachments/assets/bf6b0f11-e712-402a-8a90-eee8b6b01bfb)
 
 ## 4. bot运行期间效果不理想如何排查
 
 如果运行期间输出结果不对，我们可以点开"调试"挨个节点排查。
 
-![调试](https://github.com/user-attachments/assets/256bff85-33b3-4ef6-9e1a-0a760c1b1145)
-
+![调试](https://github.com/user-attachments/assets/bb9dddf9-0e2a-4a27-a497-7d7ad1b352ab)
 
 # 六、发布到飞书机器人+微信订阅号/公众号
 
-## 1. 修改bot提示词
+## 1. 设置智能体提示词
 
 我们在设置快捷指令的时候，设置了一个"指令名称"，指令名称就是方便我们在飞书机器人、公众号等外部平台调用快捷指令的。
 
-![快捷指令](https://github.com/user-attachments/assets/532d130c-32dc-4501-8329-ff1c51fb9bca)
+![快捷指令名称](https://github.com/user-attachments/assets/45cc88c0-6c2b-4ed4-909f-3863a6b3f29d)
 
-为了让用户更方便输入，我们给外层bot的提示词内加上这些模板代码。
+为了让用户更方便输入，我们给外层bot的提示词内加上模板。
 
 ```新提示词：```
 
@@ -1182,25 +1176,29 @@ async function main({ params }: Args): Promise<Output> {
 
 ## 2. 授权并发布
 
-授权飞书机器人和订阅号（或者公众号）点击发布后需要**等待审核完成**。
+不想公开在coze商店的话就取消勾选。
 
-![发布](https://github.com/user-attachments/assets/27bec5d0-fabb-48fb-8057-b8879010a993)
+根据页面提示授权飞书机器人和订阅号（或者公众号）。
+
+点击发布后需要**等待审核完成**。
+
+![发布页面](https://github.com/user-attachments/assets/e52619ad-83cc-44e7-8e17-5f213fbf232b)
 
 ## 3. 飞书机器人测试
 
 点击"工作台"，可以看到我们已经发布的机器人。
 
-![机器人在哪里](https://github.com/user-attachments/assets/0fa12cf1-ee41-4980-a327-48442c94e24b)
+![飞书机器人位置](https://github.com/user-attachments/assets/946dbac9-57d5-48cd-a4c9-c76069be5ec6)
 
-![测试结果1](https://github.com/user-attachments/assets/531a1207-f9da-4fc1-b5fd-8c62227cd712)
+![飞书机器人测试结果](https://github.com/user-attachments/assets/bcbc74c6-67f8-4849-8a8f-ed0cdc2ddc2c)
 
-![测试结果2](https://github.com/user-attachments/assets/fa96a234-27e7-4bfc-89f8-34108b1d6e07)
+![测试结果画册视图](https://github.com/user-attachments/assets/39fb6483-e69f-462e-8078-5ca1ee702ca4)
 
 ## 4. 订阅号（公众号）测试
 
-![测试结果1](https://github.com/user-attachments/assets/2b01240b-1a72-4519-b3d9-60aa94051090)
+![订阅号测试](https://github.com/user-attachments/assets/15a4d344-51c6-4ea2-9af0-aafcc3ef2f41)
 
-![测试结果2](https://github.com/user-attachments/assets/be9482b7-334e-47c4-a8ed-e0e3d2408d65)
+![订阅号画册视图](https://github.com/user-attachments/assets/8b2f634c-8a46-41b7-ac0f-b8e3e93c159f)
 
 # 七、补充
 
@@ -1208,17 +1206,17 @@ async function main({ params }: Args): Promise<Output> {
 
 登录[飞书管理后台](https://feishu.cn/admin),点击"应用管理"，筛选开发者为企业内成员（个人账号就筛选个人）。可以看到我们已经创建的应用。
 
-![应用列表](https://github.com/user-attachments/assets/088a1de8-df6a-47cb-b8c5-212f658782ef)
+![飞书应用列表](https://github.com/user-attachments/assets/789c7f78-6f4d-4438-bc83-f391d7d5b845)
 
 点击"配置"，停用应用。
 
-![停用](https://github.com/user-attachments/assets/1ba3ffec-df43-4f97-83cb-8b5d190518d1)
+![停用应用](https://github.com/user-attachments/assets/f1363c70-595a-4dd0-8b2f-94a69ad3e561)
 
 登录[飞书开发者后台](https://open.feishu.cn/app),点击进入要删除的应用，在"凭证信息"页面下拉，点击删除。
 
-![app罗列页面](https://github.com/user-attachments/assets/69055248-2a0d-4ccc-997b-d3396b7433cb)
+![停用部分应用后列表](https://github.com/user-attachments/assets/fb48ba63-6bbd-4434-b0f6-40037d48eb4e)
 
-![删除应用](https://github.com/user-attachments/assets/75b4906f-c55c-4ced-ba55-99ae95526c80)
+![删除应用](https://github.com/user-attachments/assets/9ad0e338-7144-4e9b-859e-7cb74970c476)
 
 ## 2. 如何多人使用同一机器人（仅限同一组织）
 
@@ -1228,43 +1226,43 @@ async function main({ params }: Args): Promise<Output> {
 
 点击登录[飞书开发者后台](https://open.feishu.cn/app)，选择应用。截图是个人账号添加情况，企业账号无需手动添加。
 
-![个人账号添加](https://github.com/user-attachments/assets/dc7d229a-b344-4f45-853f-5def6ba9b554)
+![个人账号添加机器人](https://github.com/user-attachments/assets/2c33c771-2f79-4e22-81c6-371210f5eb46)
 
 添加完成后需要发布版本。
 
-![发布版本](https://github.com/user-attachments/assets/c922fa9e-e791-4624-94ad-a29a1d77ace7)
+![发布版本](https://github.com/user-attachments/assets/00285964-3104-405b-b308-689fbe9242fe)
 
 ### 2.2 新建群组并添加群机器人
 
 打开飞书，点击"通讯录" > "群组" > "新建群组" > 添加"群机器人"
 
-![新建群组](https://github.com/user-attachments/assets/f0e9c6d4-067e-4d51-aee3-52951364c29b)
+![新建群组](https://github.com/user-attachments/assets/02ca8de2-7127-4cef-b347-3152fbac883e)
 
-![新建机器人](https://github.com/user-attachments/assets/85f13caf-78ef-4c19-85df-e88e33dbd24a)
+![新建群机器人位置](https://github.com/user-attachments/assets/eb696bbb-bd80-44c6-a146-0a7a4b61e251)
 
-![添加群机器人](https://github.com/user-attachments/assets/3348642c-ad49-4049-946c-4717c94d48a8)
+![添加群机器人](https://github.com/user-attachments/assets/09f83143-789b-4b7b-ba21-110c830fa6e8)
 
 ### 2.3 如何使用群机器人
 
 在输入框内@机器人发送信息
 
-![@机器人](https://github.com/user-attachments/assets/aa46eafa-682e-46f8-a55c-c6ad41a5a88b)
+![@机器人](https://github.com/user-attachments/assets/e2b59951-2155-4b63-bc35-da951146b3f4)
 
-![结果](https://github.com/user-attachments/assets/98141cac-071e-41f6-9e15-59d292d1a242)
+![测试结果](https://github.com/user-attachments/assets/c61db1f6-df4f-438b-a469-a6dd074574c2)
 
 现在添加一个组织内的成员来切换身份测试下。
 
-![添加成员](https://github.com/user-attachments/assets/34deddc0-f360-4864-a300-b3d7e07b062a)
+![添加组织内成员测试](https://github.com/user-attachments/assets/0478b2d6-f801-4484-869e-ffc2c39323a4)
 
 第一次会要求我们进行一个授权。
 
-![授权](https://github.com/user-attachments/assets/148ea14d-119d-4825-9d33-3a12eec9de34)
+![授权](https://github.com/user-attachments/assets/027e8608-2143-4c4e-95ec-270e79d1a5c9)
 
-![添加成功](https://github.com/user-attachments/assets/616b8d75-c854-42c2-a182-7953f3e9ca30)
+![添加成功](https://github.com/user-attachments/assets/c74619e7-e9fa-4020-81b2-967a412362a0)
 
 我们打开飞书表格看下，2次添加是否成功。
 
-![飞书表格](https://github.com/user-attachments/assets/c3d1956d-1b08-4768-8457-e3a1398a837d)
+![飞书表格验证](https://github.com/user-attachments/assets/6362c208-c699-42bb-8377-80857f63e918)
 
 ## 3. 对外共享机器人（不是同一组织的）
 
@@ -1281,9 +1279,9 @@ async function main({ params }: Args): Promise<Output> {
 
 企业自建应用的对外共享仅支持认证租户使用。认证时长1-2个工作日（实际大概1-2h左右），可以选择3种方式认证。
 
-![企业认证](https://github.com/user-attachments/assets/1caf3779-67ec-4424-9237-d9f700b97186)
+![企业认证方式](https://github.com/user-attachments/assets/cb113d4e-6a04-4c47-be65-e3a646931a43)
 
-![认证成功](https://github.com/user-attachments/assets/867f4d2d-aca5-4048-a9e2-51f2fee5ab51)
+![认证成功](https://github.com/user-attachments/assets/8fd72f5f-7dc4-499b-aa9d-8dc212f2dedf)
 
 ### 3.2 对外共享
 
@@ -1293,33 +1291,33 @@ async function main({ params }: Args): Promise<Output> {
 
 在 "版本详情" 页面选中 "允许机器人被添加到外部群中使用"。
 
-![对外共享](https://github.com/user-attachments/assets/e52cb805-78d7-4af0-ac7f-15037fe3a2c5)
+![对外共享](https://github.com/user-attachments/assets/33f90c6d-4555-4ffe-bc83-574a22e286ce)
 
 登录[飞书管理后台](https://feishu.cn/admin)，可以看到应用审核已经有待办消息了。
 
-![飞书管理后台](https://github.com/user-attachments/assets/47c8505f-e2f9-4b79-a690-c63f3c85623f)
+![飞书管理后台](https://github.com/user-attachments/assets/95e74c37-5a34-4d70-be3d-bc7c36f00a74)
 
 点击通过后会有消息弹窗。
 
-![成功弹窗](https://github.com/user-attachments/assets/6a8cf20f-aafb-40a4-984e-93f89262151d)
+![授权成功弹窗](https://github.com/user-attachments/assets/9136d407-2115-4615-8501-2279a12f7d3e)
 
 （补充）想免审的话，就选择"设置审核规则"
 
-![设置审核规则](https://github.com/user-attachments/assets/9b51e8b1-44f9-4b1d-b276-e11018b38abe)
+![设置审核规则](https://github.com/user-attachments/assets/70072056-ecbb-4164-b6fb-575b2f70c06a)
 
 ### 3.3 对外共享机器人测试
 
 我们新建一个外部群组。
 
-![新建外部群组](https://github.com/user-attachments/assets/22d425b9-cd21-4487-bbf7-c86be21b7ded)
+![新建外部群组](https://github.com/user-attachments/assets/35e0cc6f-3ef7-444d-a9e3-8750b6f1f99e)
 
 添加群机器人。
 
-![添加群机器人](https://github.com/user-attachments/assets/17c65471-e1b7-43b4-9dff-e6a3e413b096)
+![添加群机器人](https://github.com/user-attachments/assets/2da7a74f-66f9-4447-b510-b7a8d1b64cc1)
 
 切换账号来测试下。依旧是初次使用要授权。
 
-![测试结果](https://github.com/user-attachments/assets/968d942c-1fbb-492d-a55c-620c2953b4fe)
+![测试结果](https://github.com/user-attachments/assets/b0f81c80-919a-446f-822b-268141e2c1c5)
 
 看下飞书表格，内容已经进来了。
 
