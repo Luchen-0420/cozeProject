@@ -1305,7 +1305,7 @@ async function main({ params }: Args): Promise<Output> {
 
 （补充）想免审的话，就选择"设置审核规则"
 
-![设置审核规则](https://github.com/user-attachments/assets/ab930086-b1fb-494e-aff7-7b642ec99d21)
+![设置审核规则](https://github.com/user-attachments/assets/9b51e8b1-44f9-4b1d-b276-e11018b38abe)
 
 ### 3.3 对外共享机器人测试
 
