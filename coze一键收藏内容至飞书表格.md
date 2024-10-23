@@ -1330,7 +1330,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![飞书表格](https://github.com/user-attachments/assets/b695eaec-d060-4643-b854-6452eca95d4b)
 
-# 八、（进阶教程）coze+飞书实现互动审批
+# 八、（进阶教程）飞书卡片
 
 ## 1. 进阶教程内容简介
 
@@ -1342,29 +1342,35 @@ async function main({ params }: Args): Promise<Output> {
 
 涉及知识点如下：
 
-- 2个业务应用创建（针对讲师+针对学员）
-- 
+- 飞书消息卡片的使用
+- 如何通过coze来调用飞书消息卡片
 
-## 2. 新建2个bot并发布
+## 2. 新建1个bot并发布
 
-新建后直接发布到飞书，这样我们就可以在[飞书应用后台](https://open.feishu.cn/app?lang=zh-CN)看见这2个应用了。
+新建后直接发布到飞书，这样我们就可以在[飞书应用后台](https://open.feishu.cn/app?lang=zh-CN)看见这个应用了。
 
 ![应用后台](https://github.com/user-attachments/assets/f0547932-2677-469d-acda-a7995e7ec50f)
 
 
-## 3. 学员报错信息搜集
+## 3. 为bot批量开通权限
 
-### 3.1 新建搜集多维表格
+```
+im:message:send_as_bot,im:message,contact:user.id:readonly
+```
 
-首先理一下我们需要哪些字段以及字段属性：
-
-- uid：学员唯一标识
-- 报错描述
-- 附件
-- 当前状态：未回复、已回复
+![批量开通权限](https://github.com/user-attachments/assets/c66b704d-ae3e-43ce-b07d-2de77c32ede0)
 
 
+## 4. 卡片搭建
 
-### 4.3 新建云文档至目标文件夹
+打开[飞书卡片搭建工具](https://open.feishu.cn/cardkit)
+
+
+## 5. 卡片绑定变量
+
+
+## 6. 卡片测试
+
+
 
 
