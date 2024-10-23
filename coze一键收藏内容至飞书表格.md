@@ -8,7 +8,7 @@
 2. 自定义插件调用internlm2.5-20b-0719模型
 3. 如何在bot内100%调用工作流
 4. 如何在飞书机器人/微信订阅号/公众号中使用
-5. 飞书机器人的一些补充
+5. 一些关于飞书的补充
 
 # 二、准备工作
 
@@ -1202,7 +1202,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![订阅号画册视图](https://github.com/user-attachments/assets/8b2f634c-8a46-41b7-ac0f-b8e3e93c159f)
 
-# 七、补充
+# 七、飞书应用、机器人相关补充
 
 ## 1. 如何删除弃用的飞书应用
 
@@ -1246,7 +1246,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ### 2.3 如何使用群机器人
 
-在输入框内@机器人发送信息
+#### 2.3.1 在输入框内@机器人发送信息
 
 ![@机器人](https://github.com/user-attachments/assets/e2b59951-2155-4b63-bc35-da951146b3f4)
 
@@ -1265,6 +1265,10 @@ async function main({ params }: Args): Promise<Output> {
 我们打开飞书表格看下，2次添加是否成功。
 
 ![飞书表格验证](https://github.com/user-attachments/assets/6362c208-c699-42bb-8377-80857f63e918)
+
+#### 2.3.2 点击头像私聊
+
+![点击头像私聊](https://github.com/user-attachments/assets/0ad7d523-bd78-4fbd-adcd-002c08c2653b)
 
 ## 3. 对外共享机器人（不是同一组织的）
 
@@ -1324,3 +1328,21 @@ async function main({ params }: Args): Promise<Output> {
 看下飞书表格，内容已经进来了。
 
 ![飞书表格](https://github.com/user-attachments/assets/b695eaec-d060-4643-b854-6452eca95d4b)
+
+# 八、（进阶）coze中自定义调用飞书某功能
+
+## 1. 进阶教程内容简介
+
+本小节示例应用场景：针对学员们在完成【彩蛋岛-玩转书生大模型+coze】闯关作业的过程中遇到一些问题，可在飞书群内私聊群机器人提交反馈。讲师对采集上来的问题进行统一回复后，飞书机器人发送消息给学员。
+
+![流程图](https://github.com/user-attachments/assets/92d3e250-9a28-405a-a1f4-9698d8d04527)
+
+### 4.1 获取tenant_access_token
+
+
+### 4.2 上传素材
+
+
+### 4.3 新建云文档至目标文件夹
+
+
