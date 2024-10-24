@@ -9,15 +9,19 @@
 3. 如何在bot内100%调用工作流
 4. 如何在飞书机器人/微信订阅号/公众号中使用
 5. 一些关于飞书的补充
-6. （进阶教程）coze+飞书实现信息采集以及消息推送
+6. 进阶教程理论补充
 
 # 二、准备工作
 
+**在开始本课程前，请先阅读本课程的task文档！！！**
+**在开始本课程前，请先阅读本课程的task文档！！！**
+**在开始本课程前，请先阅读本课程的task文档！！！**
+
 打开[coze国内站点](https://www.coze.cn/)
 
-## 1. 选择性开通coze专业版
+## 1. 开通coze专业版
 
-由于后续我们需要调试bot，bot api一天限制100次，是不够用的，可以选择性开通专业版。
+由于后续我们需要调试bot，bot api一天限制100次，是不够用的，可以选择性开通专业版。本次课程的团队空间皆为专业版团队空间，想加入团队空间的同学只能选择开通专业版。
 
 ![coze首页](https://github.com/user-attachments/assets/7c818ef8-77f6-47f6-91a4-feeb12f853af)
 
@@ -1330,46 +1334,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![飞书表格](https://github.com/user-attachments/assets/b695eaec-d060-4643-b854-6452eca95d4b)
 
-# 八、（进阶教程）飞书卡片
-
-## 1. 进阶教程内容简介
-
-本小节示例应用场景：
-
-    针对学员们在完成【彩蛋岛-玩转书生大模型+coze】闯关作业的过程中遇到一些问题，可在飞书群内私聊群机器人提交反馈。讲师对采集上来的问题进行统一回复后，飞书机器人发送消息给学员。
-
-![流程图](https://github.com/user-attachments/assets/59710f36-7bf5-42d2-b188-2be829afa68f)
-
-涉及知识点如下：
-
-- 飞书消息卡片的使用
-- 如何通过coze来调用飞书消息卡片
-
-## 2. 新建1个bot并发布
-
-新建后直接发布到飞书，这样我们就可以在[飞书应用后台](https://open.feishu.cn/app?lang=zh-CN)看见这个应用了。
-
-![应用后台](https://github.com/user-attachments/assets/f0547932-2677-469d-acda-a7995e7ec50f)
-
-
-## 3. 为bot批量开通权限
-
-```
-im:message:send_as_bot,im:message,contact:user.id:readonly
-```
-
-![批量开通权限](https://github.com/user-attachments/assets/c66b704d-ae3e-43ce-b07d-2de77c32ede0)
-
-
-## 4. 卡片搭建
-
-打开[飞书卡片搭建工具](https://open.feishu.cn/cardkit)
-
-
-## 5. 卡片绑定变量
-
-
-## 6. 卡片测试
+# 八、(进阶教程）意图识别节点
 
 
 
