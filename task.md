@@ -14,25 +14,25 @@
 
 因为团队人数多的原因，为了更方便区分，头像**统一使用自己的微信头像**
 
-### 命名要求
+### 工作流、bot命名要求
 
 uid查看方式：https://colearn.intern-ai.org.cn/co
 
 ![uid查看](https://github.com/user-attachments/assets/b1218785-d36d-4683-9bd5-5f4a4cf59d5c)
 
+bot命名要求：uid-微信昵称。
+
 比如我的uid是10。
 
-bot命名要求：uid-微信昵称-作业属性。
+如下图所示，想只看自己的，就筛选下：
 
-如下图所示：uid-微信昵称-基础
-
-![bot列表](https://github.com/user-attachments/assets/bc9a53a4-4bb4-4dea-9b3d-e4dc1e69ea52)
+![bot列表](https://github.com/user-attachments/assets/54a05a22-8592-4170-856e-7d6915356ed6)
 
 工作流命名要求：s+uid+下划线+工作流名称。
   
-我的工作流命名：s10_content_arrange。如下图所示：
+如下图所示：
 
-![工作流列表](https://github.com/user-attachments/assets/2edb9f30-e315-42bf-92cf-4f8070ceb6ac)
+![工作流列表](https://github.com/user-attachments/assets/c744903c-61da-481c-95ac-d9485a097729)
 
 ### 团队空间链接
 
