@@ -22,7 +22,7 @@ uid查看方式：https://colearn.intern-ai.org.cn/co
 
 ![uid查看](https://github.com/user-attachments/assets/b1218785-d36d-4683-9bd5-5f4a4cf59d5c)
 
-bot命名要求：uid-微信昵称。
+**bot命名要求：uid-微信昵称。**
 
 比如我的uid是10。
 
@@ -30,7 +30,7 @@ bot命名要求：uid-微信昵称。
 
 ![bot列表](https://github.com/user-attachments/assets/54a05a22-8592-4170-856e-7d6915356ed6)
 
-工作流命名要求：s+uid+下划线+工作流名称。
+**工作流命名要求：s+uid+下划线+工作流名称。**
   
 如下图所示：
 
