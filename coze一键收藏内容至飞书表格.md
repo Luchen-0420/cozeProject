@@ -1363,11 +1363,15 @@ async function main({ params }: Args): Promise<Output> {
 
 这里我们采用一种更便捷的方式：变量，来方便后续如果要对表格链接做改动。这样就只需要对Bot进行重新发布就可以了。
 
-进入我们的bot，点击添加变量，输入变量名称，保存。
+进入我们的bot，点击添加变量，输入变量名称，输入默认值（我们的表格链接）保存。
+
+注意：这里表格链接一定要准确，不要设置成内容收藏表格的里链接。
+
+![表格链接](https://github.com/user-attachments/assets/262c972e-eb3f-4b12-9571-b164d861329c)
 
 ![添加变量1](https://github.com/user-attachments/assets/e28c344e-374a-454f-95b1-997c90fe28ee)
 
-![添加变量2](https://github.com/user-attachments/assets/3cafcb9e-e2d7-452a-944c-ae37d2b32401)
+![添加变量2](https://github.com/user-attachments/assets/b1d944a3-1325-4851-9841-bb05f6219c3b)
 
 ## 3. 新建获取github每日热点工作流
 
@@ -1438,7 +1442,9 @@ async function main({ params }: Args): Promise<Output> {
 
 点击"循环体"让它呈选中状态再点击添加"代码"节点，配置如图所示：
 
-![配置图](https://github.com/user-attachments/assets/a682a6ed-82c3-4c07-9291-31d8bb018437)
+![配置图](https://github.com/user-attachments/assets/fa019dcf-ded3-4128-8907-8cdc0733bfce)
+
+```python代码```
 
 ```
 import re
@@ -1516,7 +1522,7 @@ async def main(args: Any) -> str:
 
 #### 3.3.5 序列化准备写入飞书表格
 
-和内容收藏工作流一样，我们要对写入飞书表格的数据进行一个序列化处理。与上个工作流不同的是，此处代码，增加了对文本型输出
+和内容收藏工作流一样，我们要对写入飞书表格的数据进行一个序列化处理。与上个工作流不同的是，此处代码，增加了去除"summary"字符处理。
 
 ![配置图1](https://github.com/user-attachments/assets/9bbe12fb-1ab5-4ec7-a4a7-5ecd242168a3)
 
@@ -1550,10 +1556,21 @@ async function main({ params }: Args): Promise<Output> {
 
 #### 3.3.6 写入飞书表格
 
+点击"循环体"让它呈选中状态再点击添加"写入飞书多维表格"插件，配置如图所示：
 
+![配置图](https://github.com/user-attachments/assets/6f1466a4-f657-440c-b8e8-17126562d08b)
 
-#### 3.3.7 测试结果
+#### 3.3.7 配置输出
 
+给循环节点配置一个输出变量，主要方便查看是否写入成功。
+
+![输出配置1](https://github.com/user-attachments/assets/276af147-b069-4402-9d2a-b32edbfc74ae)
+
+![输出配置2](https://github.com/user-attachments/assets/70352811-8a68-42ac-88cf-04670a7cc7c9)
+
+#### 3.3.8 测试结果
+
+![测试结果](https://github.com/user-attachments/assets/d4a1c410-8025-4932-b554-284a81330482)
 
 ### 3.4 定时处理工作流并发送机器人
 
@@ -1563,7 +1580,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![新建定时器](https://github.com/user-attachments/assets/deae2602-56d6-4263-bcb3-6bc0cad95434)
 
-我想要的是每周一八点给我进行录入和推送，大家可以自行选择什么时间段，为了测试看结果，先选择一个就近时间时间，要考虑加入审核时间。
+我想要的是每周一八点给我进行录入和推送，大家可以自行选择什么时间段，为了测试看结果，先选择一个就近时间时间，要考虑加入审核时间，大概选择1-2h后差不多。
 
 这里我们的任务执行选择工作流。设置如图所示。
 
