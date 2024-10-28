@@ -11,7 +11,7 @@
 3. 如何在bot内100%调用工作流
 4. 如何在飞书机器人/微信订阅号/公众号中使用
 5. 一些关于飞书的补充
-6. （进阶教程）循环节点、卡片的使用
+6. （进阶教程）循环节点的使用
 
 # 二、准备工作
 
@@ -1401,46 +1401,182 @@ async function main({ params }: Args): Promise<Output> {
 
 ### 3.2 工作流思路
 
-1. 由插件来获取飞书表格字段值
-2. 对英文字段值description进行中文翻译
-3. 序列化处理
-4. 写入飞书表格
+1. 由插件来获取飞书表格所需字段值
+2. （循环节点内）爬虫爬取页面信息，并做处理
+3. （循环节点内）大模型对爬取内容进行英译中
+4. （循环节点内）序列化处理，写入飞书表格
 
-### 3.3 对字段进行翻译
+### 3.3 循环翻译并输出写入飞书表格
 
-result是一个包含多条数据的数组，我们处理时就要用到批处理，大家可以选择官方自带的大模型节点进行批处理，本教程将演示如何用循环节点+自定义Internlm插件来实现。
+除了使用循环节点外，还有一种做法就是用官方的大模型节点，选择批处理。
+
+本教程演示的是自定义的InternLM模型调用插件，能否和官方一样可以通过自定义实现批处理我不知道，反正我不会写这块代码
 
 #### 3.3.1 新建循环节点
 
 点击新增循环节点。
 
-![新建循环节点](https://github.com/user-attachments/assets/552be80e-505a-4203-b720-6c9090b73c61)
+![新建循环节点](https://github.com/user-attachments/assets/2a05a327-7708-4fa5-9b5a-832c528d0810)
 
-截取代码
+进行一些变量配置。
+
+![配置页面](https://github.com/user-attachments/assets/aafd4a19-7107-4aec-958c-32aafbf7c39a)
+
+#### 3.3.2 循环体内添加jina-reader插件来爬取内容
+
+点击循环体节点，蓝色框代表已经选中，在选中的情况下，再去点击添加其他插件。
+
+![循环体添加插件](https://github.com/user-attachments/assets/8ff241a4-e0da-4a78-9fc6-c4ceb3a9a5a9)
+
+插件配置如图所示,url输入的是"循环"节点内的值：
+
+![配置](https://github.com/user-attachments/assets/ea1f13e6-87e2-4f69-b272-5ef090144ac7)
+
+#### 3.3.3 爬取内容处理
+
+和内容收藏工作流一样，我们要对爬取内容做去除简单markdown格式处理和截取文字。
+
+点击"循环体"让它呈选中状态再点击添加"代码"节点，配置如图所示：
+
+![配置图](https://github.com/user-attachments/assets/a682a6ed-82c3-4c07-9291-31d8bb018437)
 
 ```
-import typing as t
-async def main(args: Args) -> Output:
-    params = args.params["input"]  # 修改为 "params"
+import re
+from typing import List, Tuple, Any
+import json
 
-    # 确保 params 是一个列表并截取前 10 条
-    if isinstance(params, list):
-        limited_params = params[:10]
-    else:
-        limited_params = []
+async def main(args: Any) -> str:
+    try:
+        # 直接使用 args["params"] 获取参数
+        params = args["params"]
+        
+        # 初始化返回值为一个数组
+        ret = []
 
-    ret = []  # 输出类型为对象的列表
+        # 1. 获取输入参数，并确保是字符串
+        raw_content = str(params["input"]["content"])
+        title = str(params["input"]["title"])
+        url = str(params["input"]["url"])
 
-    for item in limited_params:
-        # 创建对象并提取所需字段
-        result_item = {
-            "url": item.get("url", ""),
-            "description": item.get("description", ""),
-            "name": item.get("name", ""),
-            "language": item.get("language", ""),
-        }
-        ret.append(result_item)
+        # 统计原始字符数量
+        original_char_count = len(raw_content)
 
-    return ret  # 返回对象列表
+        # 2. 使用正则表达式处理 Markdown 超链接、图片和格式字符
+        def markdown_to_text(md: str) -> Tuple[str, List[str]]:
+            # 提取 URL
+            urls = re.findall(r'\[.*?\]\((.*?)\)', md)
+            # 去掉链接部分，保留链接文本，去掉图片链接，去掉 Markdown 的格式字符，去掉多余的换行符
+            md = re.sub(r'!\[.*?\]\(.*?\)|\[([^\]]+)\]\([^\)]+\)|[#*`-]|\n+', lambda m: '' if m.group(0).startswith('![') or m.group(0).startswith('[[') else (m.group(1) + ' ') if m.group(1) else '\n', md)
+            return md.strip(), urls
+
+        # 转换 Markdown 到普通文本
+        plain_text, extracted_urls = markdown_to_text(raw_content)
+
+        # 3. 去除多余的横线、等号，并处理换行符和空白字符
+        stripped_content = re.sub(r'-{2,}|={2,}', '', plain_text)
+        stripped_content = re.sub(r'\n+', '\n', stripped_content).strip()
+
+        # 4. 计算去除 Markdown 后的字符数量
+        clean_char_count = len(stripped_content)
+
+        # 5. 如果内容超过 1500 字符，则截取前 1500 字符
+        stripped_content = stripped_content[:1500]
+
+        # 6. 添加处理后的结果到返回值列表
+        ret.append({
+            "plain_text": stripped_content
+        })
+
+        # 7. 将返回值转换为 JSON 字符串格式，并作为最终输出
+        return json.dumps({"output": ret}, ensure_ascii=False)
+
+    except Exception as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
 ```
+
+#### 3.3.4 大模型进行逐条翻译
+
+点击"循环体"呈现选中状态，添加我们自定义的大模型插件。输入提示词和引入我们需要翻译的值。
+
+![配置图](https://github.com/user-attachments/assets/86243639-8b4c-4845-9065-6dcc72630454)
+
+```提示词```
+
+```
+# 任务\n 根据用户输入，进行翻译\n
+# 输出格式要求\n
+直接输出原始JSON格式，不要使用任何包装或代码块。 严格按照以下格式输出，不添加任何其他内容：\n {\n \"summary\": \"在这里填写内容摘要\" }\n
+# 输出内容要求\n summary：根据用户输入的<plain_text>，捕捉内容主题、阅读价值，生成一段简洁而全面的摘要。不要使用\"摘要：\"或类似前缀。使用最常见、最正式的名称。
+# 重要提醒\n
+- 不要使用json或任何其他代码块标记\n
+- 不要将输出包装在\"answer\"或任何其他字段中\n
+- 确保输出的是可以直接被解析的原始JSON\n
+- 除了指定的JSON结构外，不要输出任何其他内容
+```
+
+#### 3.3.5 序列化准备写入飞书表格
+
+和内容收藏工作流一样，我们要对写入飞书表格的数据进行一个序列化处理。与上个工作流不同的是，此处代码，增加了对文本型输出
+
+![配置图1](https://github.com/user-attachments/assets/9bbe12fb-1ab5-4ec7-a4a7-5ecd242168a3)
+
+![配置图2](https://github.com/user-attachments/assets/e17959d5-370d-479f-88e8-4cda0d04f731)
+
+```js代码```
+
+```
+async function main({ params }: Args): Promise<Output> { 
+    const contentMatch = params.content.match(/"summary":\s*"([^"]+)"/);
+    const summary = contentMatch ? contentMatch[1] : ""; 
+
+    const fields = {
+        "标题":params.input["name"],
+        "简介":summary,
+        "日期":params.time,
+        "地址":params.input["url"],
+        "language":params.input["language"]
+
+    };
+    const ret = {
+        output: [
+            { fields }
+        ]
+    };
+
+    return ret;
+}
+
+```
+
+#### 3.3.6 写入飞书表格
+
+
+
+#### 3.3.7 测试结果
+
+
+### 3.4 定时处理工作流并发送机器人
+
+#### 3.4.1 触发器设置
+
+点击进入bot页面，首先添加我们刚刚发布的工作流，然后点击"新建触发器"
+
+![新建定时器](https://github.com/user-attachments/assets/deae2602-56d6-4263-bcb3-6bc0cad95434)
+
+我想要的是每周一八点给我进行录入和推送，大家可以自行选择什么时间段，为了测试看结果，先选择一个就近时间时间，要考虑加入审核时间。
+
+这里我们的任务执行选择工作流。设置如图所示。
+
+![触发器设置](https://github.com/user-attachments/assets/cb6e5539-555a-499d-8261-5b5dcf2bbce7)
+
+#### 3.4.2 发布
+
+设置完成后一定要点击发布。
+
+![发布](https://github.com/user-attachments/assets/8a67e412-a57d-40bc-ad72-80970ddf2027)
+
+#### 3.4.3 测试结果
+
+
+
 
