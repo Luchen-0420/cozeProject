@@ -1351,7 +1351,8 @@ async function main({ params }: Args): Promise<Output> {
 | 日期       | 文本        | 日期                                              |
 | 标题       | 文本        | 标题                                              |
 | 简介       | 文本        | 通篇大概讲了什么，由大模型生成                       |
-| 地址       | 超链接        | 地址                                              |
+| 地址       | 文本        | 地址                                              |
+| language   | 单选        | language标签                                              |
 
 ![空表示例](https://github.com/user-attachments/assets/7d6f14ba-de4b-40f7-8cdb-ff9c3e81bfbd)
 
