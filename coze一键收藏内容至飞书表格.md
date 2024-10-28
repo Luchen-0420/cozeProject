@@ -10,8 +10,8 @@
 2. 自定义插件调用internlm2.5-20b-0719模型
 3. 如何在bot内100%调用工作流
 4. 如何在飞书机器人/微信订阅号/公众号中使用
-5. 一些关于飞书的补充
-6. （进阶教程）循环节点的使用
+5. （进阶教程）循环节点的使用
+6. 一些关于飞书的补充
 
 # 二、准备工作
 
@@ -1213,134 +1213,7 @@ async function main({ params }: Args): Promise<Output> {
 ![订阅号画册视图](https://github.com/user-attachments/assets/8b2f634c-8a46-41b7-ac0f-b8e3e93c159f)
 
 
-# 七、飞书应用、机器人相关补充
-
-## 1. 如何删除弃用的飞书应用
-
-登录[飞书管理后台](https://feishu.cn/admin),点击"应用管理"，筛选开发者为企业内成员（个人账号就筛选个人）。可以看到我们已经创建的应用。
-
-![飞书应用列表](https://github.com/user-attachments/assets/789c7f78-6f4d-4438-bc83-f391d7d5b845)
-
-点击"配置"，停用应用。
-
-![停用应用](https://github.com/user-attachments/assets/f1363c70-595a-4dd0-8b2f-94a69ad3e561)
-
-登录[飞书开发者后台](https://open.feishu.cn/app),点击进入要删除的应用，在"凭证信息"页面下拉，点击删除。
-
-![停用部分应用后列表](https://github.com/user-attachments/assets/fb48ba63-6bbd-4434-b0f6-40037d48eb4e)
-
-![删除应用](https://github.com/user-attachments/assets/9ad0e338-7144-4e9b-859e-7cb74970c476)
-
-## 2. 如何多人使用同一机器人（仅限同一组织）
-
-新建群组，添加群成员和群机器人。以下演示账号为企业账号，个人账号步骤相同。
-
-### 2.1 为应用添加机器人
-
-点击登录[飞书开发者后台](https://open.feishu.cn/app)，选择应用。截图是个人账号添加情况，企业账号无需手动添加。
-
-![个人账号添加机器人](https://github.com/user-attachments/assets/2c33c771-2f79-4e22-81c6-371210f5eb46)
-
-添加完成后需要发布版本。
-
-![发布版本](https://github.com/user-attachments/assets/00285964-3104-405b-b308-689fbe9242fe)
-
-### 2.2 新建群组并添加群机器人
-
-打开飞书，点击"通讯录" > "群组" > "新建群组" > 添加"群机器人"
-
-![新建群组](https://github.com/user-attachments/assets/02ca8de2-7127-4cef-b347-3152fbac883e)
-
-![新建群机器人位置](https://github.com/user-attachments/assets/eb696bbb-bd80-44c6-a146-0a7a4b61e251)
-
-![添加群机器人](https://github.com/user-attachments/assets/09f83143-789b-4b7b-ba21-110c830fa6e8)
-
-### 2.3 如何使用群机器人
-
-#### 2.3.1 在输入框内@机器人发送信息
-
-![@机器人](https://github.com/user-attachments/assets/e2b59951-2155-4b63-bc35-da951146b3f4)
-
-![测试结果](https://github.com/user-attachments/assets/c61db1f6-df4f-438b-a469-a6dd074574c2)
-
-现在添加一个组织内的成员来切换身份测试下。
-
-![添加组织内成员测试](https://github.com/user-attachments/assets/0478b2d6-f801-4484-869e-ffc2c39323a4)
-
-第一次会要求我们进行一个授权。
-
-![授权](https://github.com/user-attachments/assets/027e8608-2143-4c4e-95ec-270e79d1a5c9)
-
-![添加成功](https://github.com/user-attachments/assets/c74619e7-e9fa-4020-81b2-967a412362a0)
-
-我们打开飞书表格看下，2次添加是否成功。
-
-![飞书表格验证](https://github.com/user-attachments/assets/6362c208-c699-42bb-8377-80857f63e918)
-
-#### 2.3.2 点击头像私聊
-
-![点击头像私聊](https://github.com/user-attachments/assets/0ad7d523-bd78-4fbd-adcd-002c08c2653b)
-
-## 3. 对外共享机器人（不是同一组织的）
-
-场景描述：企业在进行业务沟通时，可能面临跨租户沟通的场景。例如上下游企业的成员沟通、企业与外部客户之间的沟通等。在这些场景中，企业可以开发一个允许对外共享的机器人，利用机器人能力高效完成沟通协作。开启对外共享的机器人支持以下功能：
-
-- 添加在外部群，实现拉人入群、推送消息、响应群成员消息等功能。
-- 与外部用户单聊。通过自动化流程实现用户可能面临的产品功能反馈、业务进展通知等需要。
-
-前提必须是：认证过的企业号。
-
-### 3.1 企业认证
-
-登录[飞书管理后台](https://feishu.cn/admin)，点击"企业设置" > "企业信息"进行认证。
-
-企业自建应用的对外共享仅支持认证租户使用。认证时长1-2个工作日（实际大概1-2h左右），可以选择3种方式认证。
-
-![企业认证方式](https://github.com/user-attachments/assets/cb113d4e-6a04-4c47-be65-e3a646931a43)
-
-![认证成功](https://github.com/user-attachments/assets/8fd72f5f-7dc4-499b-aa9d-8dc212f2dedf)
-
-### 3.2 对外共享
-
-认证完成后，登录[飞书开发者后台](https://open.feishu.cn/app)。点击想要共享的机器人，在应用左侧导航栏，选择 应用发布 > 版本管理与发布。
-
-在 "版本管理与发布" 页面右上角，点击 创建版本。
-
-在 "版本详情" 页面选中 "允许机器人被添加到外部群中使用"。
-
-![对外共享](https://github.com/user-attachments/assets/33f90c6d-4555-4ffe-bc83-574a22e286ce)
-
-登录[飞书管理后台](https://feishu.cn/admin)，可以看到应用审核已经有待办消息了。
-
-![飞书管理后台](https://github.com/user-attachments/assets/95e74c37-5a34-4d70-be3d-bc7c36f00a74)
-
-点击通过后会有消息弹窗。
-
-![授权成功弹窗](https://github.com/user-attachments/assets/9136d407-2115-4615-8501-2279a12f7d3e)
-
-（补充）想免审的话，就选择"设置审核规则"
-
-![设置审核规则](https://github.com/user-attachments/assets/70072056-ecbb-4164-b6fb-575b2f70c06a)
-
-### 3.3 对外共享机器人测试
-
-我们新建一个外部群组。
-
-![新建外部群组](https://github.com/user-attachments/assets/35e0cc6f-3ef7-444d-a9e3-8750b6f1f99e)
-
-添加群机器人。
-
-![添加群机器人](https://github.com/user-attachments/assets/2da7a74f-66f9-4447-b510-b7a8d1b64cc1)
-
-切换账号来测试下。依旧是初次使用要授权。
-
-![测试结果](https://github.com/user-attachments/assets/b0f81c80-919a-446f-822b-268141e2c1c5)
-
-看下飞书表格，内容已经进来了。
-
-![飞书表格](https://github.com/user-attachments/assets/b695eaec-d060-4643-b854-6452eca95d4b)
-
-# 八、（进阶教程）获取github trending 并每日定时自动添加进飞书表格
+# 七、（进阶教程）获取github trending 并每周定时自动添加进飞书表格
 
 ## 1. 新建一张数据表
 
@@ -1600,4 +1473,130 @@ async function main({ params }: Args): Promise<Output> {
 ![成功结果](https://github.com/user-attachments/assets/3ae3d6d2-407c-4af7-a571-6ab8ea593faf)
 
 
+# 八、飞书应用、机器人相关补充
+
+## 1. 如何删除弃用的飞书应用
+
+登录[飞书管理后台](https://feishu.cn/admin),点击"应用管理"，筛选开发者为企业内成员（个人账号就筛选个人）。可以看到我们已经创建的应用。
+
+![飞书应用列表](https://github.com/user-attachments/assets/789c7f78-6f4d-4438-bc83-f391d7d5b845)
+
+点击"配置"，停用应用。
+
+![停用应用](https://github.com/user-attachments/assets/f1363c70-595a-4dd0-8b2f-94a69ad3e561)
+
+登录[飞书开发者后台](https://open.feishu.cn/app),点击进入要删除的应用，在"凭证信息"页面下拉，点击删除。
+
+![停用部分应用后列表](https://github.com/user-attachments/assets/fb48ba63-6bbd-4434-b0f6-40037d48eb4e)
+
+![删除应用](https://github.com/user-attachments/assets/9ad0e338-7144-4e9b-859e-7cb74970c476)
+
+## 2. 如何多人使用同一机器人（仅限同一组织）
+
+新建群组，添加群成员和群机器人。以下演示账号为企业账号，个人账号步骤相同。
+
+### 2.1 为应用添加机器人
+
+点击登录[飞书开发者后台](https://open.feishu.cn/app)，选择应用。截图是个人账号添加情况，企业账号无需手动添加。
+
+![个人账号添加机器人](https://github.com/user-attachments/assets/2c33c771-2f79-4e22-81c6-371210f5eb46)
+
+添加完成后需要发布版本。
+
+![发布版本](https://github.com/user-attachments/assets/00285964-3104-405b-b308-689fbe9242fe)
+
+### 2.2 新建群组并添加群机器人
+
+打开飞书，点击"通讯录" > "群组" > "新建群组" > 添加"群机器人"
+
+![新建群组](https://github.com/user-attachments/assets/02ca8de2-7127-4cef-b347-3152fbac883e)
+
+![新建群机器人位置](https://github.com/user-attachments/assets/eb696bbb-bd80-44c6-a146-0a7a4b61e251)
+
+![添加群机器人](https://github.com/user-attachments/assets/09f83143-789b-4b7b-ba21-110c830fa6e8)
+
+### 2.3 如何使用群机器人
+
+#### 2.3.1 在输入框内@机器人发送信息
+
+![@机器人](https://github.com/user-attachments/assets/e2b59951-2155-4b63-bc35-da951146b3f4)
+
+![测试结果](https://github.com/user-attachments/assets/c61db1f6-df4f-438b-a469-a6dd074574c2)
+
+现在添加一个组织内的成员来切换身份测试下。
+
+![添加组织内成员测试](https://github.com/user-attachments/assets/0478b2d6-f801-4484-869e-ffc2c39323a4)
+
+第一次会要求我们进行一个授权。
+
+![授权](https://github.com/user-attachments/assets/027e8608-2143-4c4e-95ec-270e79d1a5c9)
+
+![添加成功](https://github.com/user-attachments/assets/c74619e7-e9fa-4020-81b2-967a412362a0)
+
+我们打开飞书表格看下，2次添加是否成功。
+
+![飞书表格验证](https://github.com/user-attachments/assets/6362c208-c699-42bb-8377-80857f63e918)
+
+#### 2.3.2 点击头像私聊
+
+![点击头像私聊](https://github.com/user-attachments/assets/0ad7d523-bd78-4fbd-adcd-002c08c2653b)
+
+## 3. 对外共享机器人（不是同一组织的）
+
+场景描述：企业在进行业务沟通时，可能面临跨租户沟通的场景。例如上下游企业的成员沟通、企业与外部客户之间的沟通等。在这些场景中，企业可以开发一个允许对外共享的机器人，利用机器人能力高效完成沟通协作。开启对外共享的机器人支持以下功能：
+
+- 添加在外部群，实现拉人入群、推送消息、响应群成员消息等功能。
+- 与外部用户单聊。通过自动化流程实现用户可能面临的产品功能反馈、业务进展通知等需要。
+
+前提必须是：认证过的企业号。
+
+### 3.1 企业认证
+
+登录[飞书管理后台](https://feishu.cn/admin)，点击"企业设置" > "企业信息"进行认证。
+
+企业自建应用的对外共享仅支持认证租户使用。认证时长1-2个工作日（实际大概1-2h左右），可以选择3种方式认证。
+
+![企业认证方式](https://github.com/user-attachments/assets/cb113d4e-6a04-4c47-be65-e3a646931a43)
+
+![认证成功](https://github.com/user-attachments/assets/8fd72f5f-7dc4-499b-aa9d-8dc212f2dedf)
+
+### 3.2 对外共享
+
+认证完成后，登录[飞书开发者后台](https://open.feishu.cn/app)。点击想要共享的机器人，在应用左侧导航栏，选择 应用发布 > 版本管理与发布。
+
+在 "版本管理与发布" 页面右上角，点击 创建版本。
+
+在 "版本详情" 页面选中 "允许机器人被添加到外部群中使用"。
+
+![对外共享](https://github.com/user-attachments/assets/33f90c6d-4555-4ffe-bc83-574a22e286ce)
+
+登录[飞书管理后台](https://feishu.cn/admin)，可以看到应用审核已经有待办消息了。
+
+![飞书管理后台](https://github.com/user-attachments/assets/95e74c37-5a34-4d70-be3d-bc7c36f00a74)
+
+点击通过后会有消息弹窗。
+
+![授权成功弹窗](https://github.com/user-attachments/assets/9136d407-2115-4615-8501-2279a12f7d3e)
+
+（补充）想免审的话，就选择"设置审核规则"
+
+![设置审核规则](https://github.com/user-attachments/assets/70072056-ecbb-4164-b6fb-575b2f70c06a)
+
+### 3.3 对外共享机器人测试
+
+我们新建一个外部群组。
+
+![新建外部群组](https://github.com/user-attachments/assets/35e0cc6f-3ef7-444d-a9e3-8750b6f1f99e)
+
+添加群机器人。
+
+![添加群机器人](https://github.com/user-attachments/assets/2da7a74f-66f9-4447-b510-b7a8d1b64cc1)
+
+切换账号来测试下。依旧是初次使用要授权。
+
+![测试结果](https://github.com/user-attachments/assets/b0f81c80-919a-446f-822b-268141e2c1c5)
+
+看下飞书表格，内容已经进来了。
+
+![飞书表格](https://github.com/user-attachments/assets/b695eaec-d060-4643-b854-6452eca95d4b)
 
