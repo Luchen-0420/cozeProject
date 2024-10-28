@@ -1595,6 +1595,9 @@ async function main({ params }: Args): Promise<Output> {
 
 #### 3.4.3 测试结果
 
+触发成功，虽然机器人回复有问题，但是依旧成功写入飞书表格
+
+![成功结果](https://github.com/user-attachments/assets/3ae3d6d2-407c-4af7-a571-6ab8ea593faf)
 
 
 
