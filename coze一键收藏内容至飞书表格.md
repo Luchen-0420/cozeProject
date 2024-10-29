@@ -2,16 +2,24 @@
 
 ## 1.教程简介
 
-实现收藏内容至飞书表格。
+实现通过飞书机器人、公众号输入分享链接收藏内容至飞书表格。
 
-## 2.本课程将会学到什么
+自动获取github每日热点并写入飞书表格。
+
+## 2.主要涉及内容
 
 1. coze工作流搭建
 2. 自定义插件调用internlm2.5-20b-0719模型
 3. 如何在bot内100%调用工作流
 4. 如何在飞书机器人/微信订阅号/公众号中使用
-5. （进阶教程）循环节点的使用
+5. （进阶教程）循环节点的使用、自定义解析网页插件
 6. 一些关于飞书的补充
+
+## 3.下期搭建内容设想
+
+1. 通过群机器人或者公开表格收集本教程用户反馈问题至飞书表格
+2. 意图识别
+3. 大模型召回知识库进行正确回复并更改飞书表格指标
 
 # 二、准备工作
 
@@ -367,6 +375,8 @@ async def main(args):
 #### 6.2.1 添加jina-reader插件
 
 插件市场搜索"jina-reader"插件，添加并使用。
+
+也可以自己写一个插件，官网地址：https://jina.ai/reader/
 
 ![添加jinareader插件](https://github.com/user-attachments/assets/455c4530-a128-4a0f-9cfa-636d0cdd590e)
 
@@ -911,7 +921,7 @@ siteName：仅回答用户输入的url归属的平台名称，不需要额外解
 
 ![配置图](https://github.com/user-attachments/assets/0a402ccc-ace5-4d3e-b712-c2698641cad5)
 
-代码：
+```js代码：```
 
 ```
 async function main({ params }: Args): Promise<Output> {
@@ -1217,10 +1227,10 @@ async function main({ params }: Args): Promise<Output> {
 | 日期       | 文本        | 日期                                              |
 | 标题       | 文本        | 标题                                              |
 | 简介       | 文本        | 通篇大概讲了什么，由大模型生成                       |
-| 地址       | 文本        | 地址                                              |
+| 地址       | 文本        | url                                             |
 | language   | 单选        | language标签                                              |
 
-![空表示例](https://github.com/user-attachments/assets/7d6f14ba-de4b-40f7-8cdb-ff9c3e81bfbd)
+![空表示例](https://github.com/user-attachments/assets/79087271-eb5c-45dd-89d9-4cd91fa07884)
 
 ## 2. 添加变量
 
@@ -1255,6 +1265,8 @@ async function main({ params }: Args): Promise<Output> {
 ![连线图](https://github.com/user-attachments/assets/2ac9ee68-2552-49e1-88cc-88804a3cd801)
 
 ### 3.2 添加热榜插件
+
+2种方式：使用插件市场现成插件、自定义获取插件（偶尔会timeout）
 
 #### 3.2.1 添加热榜插件直接插件市场添加别人现成的
 
@@ -1389,7 +1401,7 @@ def handler(args: Args[Input])->Output:
 
 除了使用循环节点外，还有一种做法就是用官方的大模型节点，选择批处理。
 
-本教程演示的是自定义的InternLM模型调用插件，能否和官方一样可以通过自定义实现批处理我不知道，反正我不会写这块代码
+本教程演示的是自定义的InternLM模型调用插件，无法批处理，所以选择循环节点。
 
 #### 3.3.1 新建循环节点
 
@@ -1479,6 +1491,8 @@ async def main(args: Any) -> str:
 
 点击"循环体"呈现选中状态，添加我们自定义的大模型插件。输入提示词和引入我们需要翻译的值。
 
+我的提示词写得不是很好，大家可以自行优化，如果有好的提示词，希望也能反馈给我~谢谢~
+
 ![配置图](https://github.com/user-attachments/assets/86243639-8b4c-4845-9065-6dcc72630454)
 
 ```提示词```
@@ -1555,7 +1569,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ![新建定时器](https://github.com/user-attachments/assets/deae2602-56d6-4263-bcb3-6bc0cad95434)
 
-我想要的是每周一八点给我进行录入和推送，大家可以自行选择什么时间段，为了测试看结果，先选择一个就近时间时间，要考虑加入审核时间，大概选择1-2h后差不多。
+大家可以自行选择什么时间段，为了测试看结果，先选择一个就近时间时间，要考虑加入审核时间，大概选择1-2h后差不多。
 
 这里我们的任务执行选择工作流。设置如图所示。
 
