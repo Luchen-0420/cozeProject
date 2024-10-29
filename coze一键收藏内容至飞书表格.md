@@ -1249,11 +1249,7 @@ async function main({ params }: Args): Promise<Output> {
 
 ## 3. 新建获取github每日热点工作流
 
-### 3.1 准备工作
-
-依旧是先看哪些插件是市场里有且可以免费使用的。
-
-#### 3.1.1 添加时间插件和变量节点
+### 3.1 添加时间插件和变量节点
 
 我们可以把这两个并排放到开始节点后方。获取日期插件和上一个工作流一样。点击"变量"节点。
 
@@ -1265,7 +1261,9 @@ async function main({ params }: Args): Promise<Output> {
 
 ![连线图](https://github.com/user-attachments/assets/2ac9ee68-2552-49e1-88cc-88804a3cd801)
 
-#### 3.1.2 添加热榜插件
+### 3.2 添加热榜插件
+
+#### 3.2.1 添加热榜插件直接插件市场添加别人现成的
 
 插件市场里添加热榜插件。
 
@@ -1275,7 +1273,117 @@ async function main({ params }: Args): Promise<Output> {
 
 ![测试结果](https://github.com/user-attachments/assets/0ca1af77-5c5d-4063-8f20-858b57258b27)
 
-我们只需要url、name、description、language。翻看几个会发现description基本都是英文的，这里我们就要对英文描述通过大模型做一个翻译处理。
+#### 3.2.2 自定义插件
+
+自定义插件放到工作流中有时候会网络超时，教程演示使用的插件市场现成的。
+
+新建插件。
+
+![新建插件1](https://github.com/user-attachments/assets/85cebe89-f299-4147-b5ed-062a2a91fd9c)
+
+插件代码如下：
+
+```
+from runtime import Args
+from typings.get_github_trending.get_github_trending import Input, Output
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
+import json
+
+
+def get_trending_repos():
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        'Connection': 'keep-alive'
+    }
+    params = {
+        'spoken_language_code': ''
+    }
+    
+    url = 'https://github.com/trending'
+    response = requests.get(url, headers=headers, params=params)
+    print(response)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    repos_data = []
+    repositories = soup.select('article.Box-row')
+    
+    for repo in repositories:
+        try:
+
+            # 获取仓库完整名称（包含作者和仓库名）
+            link_element = repo.select_one('h2.h3 a')
+            if link_element:
+                full_name = link_element.get_text(strip=True).replace('\n', '').replace(' ', '')
+                repo_url = f"https://github.com{link_element['href']}"
+            else:
+                full_name = None  # 或者处理缺少链接的情况
+                repo_url = None  # 根据需要进行处理
+
+            # 分离作者和仓库名
+            author, repo_name = full_name.split('/')
+            
+            # 获取描述
+            description = repo.select_one('p')
+            description = description.get_text(strip=True) if description else ''
+            
+            # 获取language
+            language_span = repo.select_one('span[itemprop="programmingLanguage"]')
+            language = language_span.get_text(strip=True) if language_span else 'Unknown'            
+            
+            # 获取统计信息
+            stats = repo.select('a.Link--muted')
+            stars = stats[0].get_text(strip=True).replace(',', '') if len(stats) > 0 else '0'
+            
+            # 获取今日star数量
+            today_stars_elem = repo.select_one('span.d-inline-block.float-sm-right')
+            today_stars = ''
+            if today_stars_elem:
+                today_stars = today_stars_elem.get_text(strip=True).split()[0].replace(',', '')
+            
+            
+            repo_info = {
+               "description":description,
+               "language":language,
+               "name":repo_name,
+               "stars":stars,
+               "today_stars":today_stars,
+               "url":repo_url
+            }
+            
+            repos_data.append(repo_info)
+            
+        except Exception as e:
+            print(f"处理仓库时出错: {str(e)}")
+            continue
+    
+    return repos_data
+
+def handler(args: Args[Input])->Output:
+    repos_data = get_trending_repos()
+    return {"result": repos_data}
+```
+
+插件依赖包配置：
+
+![插件依赖包配置](https://github.com/user-attachments/assets/54f29cea-f355-4b92-b971-a8c045784181)
+
+插件元数据配置：
+
+![插件元数据配置](https://github.com/user-attachments/assets/cb996e55-dc8e-456e-9675-5996dded9a4e)
+
+测试结果：
+
+![榜单](https://github.com/user-attachments/assets/24828701-99f8-42a3-b04f-10fc03fb7fbc)
+
+![测试结果](https://github.com/user-attachments/assets/f0abda12-1dfb-4e18-91a2-aa989bb89a50)
+
+![工作流内测试结果](https://github.com/user-attachments/assets/41a8cf9b-ccae-4c87-9d36-e8e551946cec)
+
+**测试后记得发布**
 
 ### 3.2 工作流思路
 
