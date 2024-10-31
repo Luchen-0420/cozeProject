@@ -23,6 +23,15 @@
 4. 人工回复
 5. 处理完成卡片推送
 
+## 4.实现效果
+
+![实现效果1](https://github.com/user-attachments/assets/fefd1172-149b-4179-b3fb-02a57d6f364a)
+
+![实现效果2](https://github.com/user-attachments/assets/6e0115b2-c6ae-44f1-b28a-7abef4cbd7c5)
+
+![实现效果3](https://github.com/user-attachments/assets/44121977-5c37-49b0-b693-e4610cf21b8e)
+
+
 # 二、准备工作
 
 ## 1. 开通coze专业版
